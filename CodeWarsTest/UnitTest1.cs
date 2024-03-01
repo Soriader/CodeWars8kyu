@@ -10,6 +10,14 @@ namespace CodeWarsTest
         {
 
             [Test]
+            public void AreaOrPerimeterTest()
+            {
+                Assert.AreEqual(Kata.AreaOrPerimeter(4, 4), 16);
+                Assert.AreEqual(Kata.AreaOrPerimeter(6, 10), 32);
+            }
+
+
+            [Test]
             public void SmashTest()
             {
                 Assert.AreEqual("hello", Kata.Smash(new string[] { "hello" }));

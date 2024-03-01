@@ -8,6 +8,29 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static int SumMix(object[] x)
+        {
+            int sum = 0;
+            int intValue;
+
+            foreach (object o in x)
+            {
+                if (o is int)
+                {
+                    sum += (int)o;
+                }
+                else if (o is string)
+                {
+                    if (int.TryParse((string)o, out intValue))
+                    {
+                        sum += intValue;
+                    }
+                }
+
+            }
+            return sum;
+        }
+
         public static string RepeatStr(int n, string s)
         {
             string text = "";
@@ -23,13 +46,11 @@ namespace CodeWars8kyu
 
             //https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/csharp
         }
-
         public static string Greet(string name)
         {
             return $"Hello, {name} how are you doing today?";
             //https://www.codewars.com/kata/55a70521798b14d4750000a4/train/csharp
         }
-
         public static int PositiveSum(int[] arr)
         {
              int sum = 0;

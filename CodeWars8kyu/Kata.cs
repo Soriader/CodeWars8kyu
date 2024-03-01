@@ -8,6 +8,25 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static double SumArray(double[] array)
+        {
+            return array.Sum();
+            //https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/csharp
+        }
+
+        public static int SimpleMultiplication(int x)
+        {
+            if (x % 2 != 0)
+            {
+                return x * 9;
+            }
+            else
+            {
+                return x * 8;
+            }
+
+            //https://www.codewars.com/kata/583710ccaa6717322c000105/train/csharp
+        }
         public static int SumMix(object[] x)
         {
             int sum = 0;
@@ -29,8 +48,9 @@ namespace CodeWars8kyu
 
             }
             return sum;
-        }
 
+            //https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/csharp
+        }
         public static string RepeatStr(int n, string s)
         {
             string text = "";

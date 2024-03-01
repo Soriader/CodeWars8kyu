@@ -10,6 +10,23 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void SumArrayTest()
+            {
+                Assert.AreEqual(9.2, Kata.SumArray(new double[] { 1, 5.2, 4, 0, -1 }));
+
+                //https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/csharp
+            }
+
+            [Test]
+            public void SimpleMultiplicationTest()
+            {
+                Assert.AreEqual(9, Kata.SimpleMultiplication(1), "Should return given argument times nine");
+                Assert.AreEqual(16, Kata.SimpleMultiplication(2), "Should return given argument times eight");
+                Assert.AreEqual(64, Kata.SimpleMultiplication(8), "Should return given argument times eight");
+                Assert.AreEqual(32, Kata.SimpleMultiplication(4), "Should return given argument times eight");
+                Assert.AreEqual(45, Kata.SimpleMultiplication(5), "Should return given argument times nine");
+            }
 
             [Test]
             public void SumMixTest()

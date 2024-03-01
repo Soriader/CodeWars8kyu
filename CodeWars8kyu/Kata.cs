@@ -8,6 +8,13 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static int OtherAngle(int a, int b)
+        {
+            int c = 180 - a - b;
+            return c;
+            //https://www.codewars.com/kata/5a023c426975981341000014/train/csharp
+        }
+
         public static string Correct(string text)
         {
             text = text.Replace('5', 'S');

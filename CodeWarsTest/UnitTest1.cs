@@ -9,6 +9,12 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void HelloWorldTest()
+            {
+                Assert.AreEqual("hello world!", Kata.HelloWord());
+            }
+
+            [Test]
             public void MultiplyTask()
             {
                 Assert.That(2 == Kata.Multiply(2, 1));

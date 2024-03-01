@@ -9,6 +9,12 @@ namespace CodeWars8kyu
     public static class Kata
     {
 
+        public static string HelloWord()
+        {
+            return "hello world!";
+            //https://www.codewars.com/kata/523b4ff7adca849afe000035/train/csharp
+        }
+
         public static int Multiply(int a, int b)
         {
             return a*b;

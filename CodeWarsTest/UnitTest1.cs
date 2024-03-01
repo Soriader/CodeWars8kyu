@@ -11,6 +11,12 @@ namespace CodeWarsTest
         {
 
             [Test]
+            public void GreetTest()
+            {
+                Assert.That(Kata.Greet("Ryan"), Is.EqualTo("Hello, Ryan how are you doing today?"));
+            }
+
+            [Test]
             public void PositiveSumTest()
             {
                 Assert.AreEqual(15, Kata.PositiveSum(new int[] { 1, 2, 3, 4, 5 }));

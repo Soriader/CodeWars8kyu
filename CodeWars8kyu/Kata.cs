@@ -9,6 +9,12 @@ namespace CodeWars8kyu
     public static class Kata
     {
 
+        public static string Greet(string name)
+        {
+            return $"Hello, {name} how are you doing today?";
+            //https://www.codewars.com/kata/55a70521798b14d4750000a4/train/csharp
+        }
+
         public static int PositiveSum(int[] arr)
         {
              int sum = 0;
@@ -22,8 +28,8 @@ namespace CodeWars8kyu
             }
             return sum;
 
+            //https://www.codewars.com/kata/5715eaedb436cf5606000381/train/csharp
         }
-
         public static string DnaToRna(string dna)
         {
             char[] charArray = dna.ToCharArray();

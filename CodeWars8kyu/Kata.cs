@@ -8,6 +8,25 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static object[] RemoveEveryOther(object[] arr)
+        {
+            int newSize = (arr.Length + 1) / 2;  
+            object[] newArray = new object[newSize]; 
+
+            int newIndex = 0; 
+
+            for (int i = 0; i < arr.Length; i += 2)
+            {
+                newArray[newIndex] = arr[i];
+                newIndex++;
+            }
+
+            return newArray;
+
+
+            //https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/csharp
+        }
+
         public static string Remove_char(string s)
         {
             if (s.Length > 2)
@@ -36,25 +55,21 @@ namespace CodeWars8kyu
             }
             //https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/csharp
         }
-
         public static string Smash(string[] words)
         {
             return string.Join(" ", words);
             //https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/csharp
         }
-
         public static string HelloWord()
         {
             return "hello world!";
             //https://www.codewars.com/kata/523b4ff7adca849afe000035/train/csharp
         }
-
         public static int Multiply(int a, int b)
         {
             return a*b;
             //https://www.codewars.com/kata/50654ddff44f800200000004/train/csharp
         }
-
         public static int MakeNegative(int number)
         {
             if (number == 0)

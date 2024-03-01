@@ -8,6 +8,17 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static string Correct(string text)
+        {
+            text = text.Replace('5', 'S');
+
+            text = text.Replace('0', 'O');
+
+            text = text.Replace('1', 'I');
+
+            return text;
+            //https://www.codewars.com/kata/577bd026df78c19bca0002c0/train/csharp
+        }
         public static string boolToWord(bool word)
         {
             string result = "";
@@ -23,7 +34,6 @@ namespace CodeWars8kyu
             return result;
             //https://www.codewars.com/kata/53369039d7ab3ac506000467/train/csharp
         }
-
         public static object[] RemoveEveryOther(object[] arr)
         {
             int newSize = (arr.Length + 1) / 2;  

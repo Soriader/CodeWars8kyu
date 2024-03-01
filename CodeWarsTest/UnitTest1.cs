@@ -9,6 +9,16 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void CorrectTest()
+            {
+                Assert.AreEqual("LONDON", Kata.Correct("L0ND0N"));
+                Assert.AreEqual("DUBLIN", Kata.Correct("DUBL1N"));
+                Assert.AreEqual("SINGAPORE", Kata.Correct("51NGAP0RE"));
+                Assert.AreEqual("BUDAPEST", Kata.Correct("BUDAPE5T"));
+                Assert.AreEqual("PARIS", Kata.Correct("PAR15"));
+            }
+
+            [Test]
             public void boolToWordTest()
             {
                 Assert.AreEqual("Yes", Kata.boolToWord(true));
@@ -63,7 +73,7 @@ namespace CodeWarsTest
             }
 
             [Test]
-            public void MultiplyTask()
+            public void MultiplyTest()
             {
                 Assert.That(2 == Kata.Multiply(2, 1));
                 Assert.That(8 == Kata.Multiply(2, 4));

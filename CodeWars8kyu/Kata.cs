@@ -8,7 +8,19 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static string Remove_char(string s)
+        {
+            if (s.Length > 2)
+            {
+                return s.Substring(1, s.Length - 2);
+            }
+            else
+            {
+                return "";
+            }
 
+            //https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/csharp
+        }
         public static int AreaOrPerimeter(int l, int w)
         {
 
@@ -22,7 +34,7 @@ namespace CodeWars8kyu
                 var y = 2 * l + 2 * w;
                 return y;
             }
-
+            //https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/csharp
         }
 
         public static string Smash(string[] words)

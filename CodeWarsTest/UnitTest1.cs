@@ -8,6 +8,15 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void Remove_charTest()
+            {
+                StringAssert.AreEqualIgnoringCase("loquen", Kata.Remove_char("eloquent"));
+                StringAssert.AreEqualIgnoringCase("ountr", Kata.Remove_char("country"));
+                StringAssert.AreEqualIgnoringCase("erso", Kata.Remove_char("person"));
+                StringAssert.AreEqualIgnoringCase("lac", Kata.Remove_char("place"));
+                StringAssert.AreEqualIgnoringCase("", Kata.Remove_char("ok"));
+            }
 
             [Test]
             public void AreaOrPerimeterTest()
@@ -15,7 +24,6 @@ namespace CodeWarsTest
                 Assert.AreEqual(Kata.AreaOrPerimeter(4, 4), 16);
                 Assert.AreEqual(Kata.AreaOrPerimeter(6, 10), 32);
             }
-
 
             [Test]
             public void SmashTest()

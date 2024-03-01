@@ -1,4 +1,5 @@
 using CodeWars8kyu;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
 
 namespace CodeWarsTest
@@ -9,6 +10,14 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void RepeatStrTest()
+            {
+                Assert.AreEqual("***", Kata.RepeatStr(3, "*"));
+                Assert.AreEqual("#####", Kata.RepeatStr(5, "#"));
+                Assert.AreEqual("ha ha ", Kata.RepeatStr(2, "ha "));
+            }
 
             [Test]
             public void GreetTest()

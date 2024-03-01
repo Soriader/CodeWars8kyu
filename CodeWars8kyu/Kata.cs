@@ -9,6 +9,12 @@ namespace CodeWars8kyu
     public static class Kata
     {
 
+        public static string Smash(string[] words)
+        {
+            return string.Join(" ", words);
+            //https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/csharp
+        }
+
         public static string HelloWord()
         {
             return "hello world!";

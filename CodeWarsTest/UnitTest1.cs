@@ -9,6 +9,15 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void PositiveSumTest()
+            {
+                Assert.AreEqual(15, Kata.PositiveSum(new int[] { 1, 2, 3, 4, 5 }));
+                Assert.AreEqual(13, Kata.PositiveSum(new int[] { 1, -2, 3, 4, 5 }));
+                Assert.AreEqual(9, Kata.PositiveSum(new int[] { -1, 2, 3, 4, -5 }));
+            }
+      
             [Test]
             public void DnaToRnaTest()
             {

@@ -8,6 +8,22 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+
+        public static int PositiveSum(int[] arr)
+        {
+             int sum = 0;
+
+            foreach (var item in arr)
+            {
+                if (item > 0)
+                {
+                    sum += item;
+                }
+            }
+            return sum;
+
+        }
+
         public static string DnaToRna(string dna)
         {
             char[] charArray = dna.ToCharArray();

@@ -9,6 +9,14 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void humanYearsCatYearsDogYearsTest()
+            {
+                Assert.AreEqual(new int[] { 1, 15, 15 }, Kata.humanYearsCatYearsDogYears(1));
+                Assert.AreEqual(new int[] { 2, 24, 24 }, Kata.humanYearsCatYearsDogYears(2));
+                Assert.AreEqual(new int[] { 10, 56, 64 }, Kata.humanYearsCatYearsDogYears(10));
+            }
+
+            [Test]
             public void OtherAngleTest()
             {
                 Assert.That(Kata.OtherAngle(30, 60), Is.EqualTo(90));

@@ -9,6 +9,17 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void boolToWordTest()
+            {
+                Assert.AreEqual("Yes", Kata.boolToWord(true));
+                Console.WriteLine("Expected Yes");
+                Assert.AreEqual("Yes", Kata.boolToWord(true));
+                Console.WriteLine("Expected Yes");
+                Assert.AreEqual("No", Kata.boolToWord(false));
+                Console.WriteLine("Expected No");
+            }
+
+            [Test]
             public void RemoveEveryOtherTest()
             {
                 Assert.AreEqual(new object[] { "Hello", "Hello Again" }, Kata.RemoveEveryOther(new object[] { "Hello", "Goodbye", "Hello Again" }));

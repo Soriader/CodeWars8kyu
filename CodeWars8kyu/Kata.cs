@@ -8,6 +8,22 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static string boolToWord(bool word)
+        {
+            string result = "";
+            switch (word)
+            {
+                case true:
+                    result = "Yes";
+                    break;
+                case false:
+                    result = "No";
+                    break;
+            }
+            return result;
+            //https://www.codewars.com/kata/53369039d7ab3ac506000467/train/csharp
+        }
+
         public static object[] RemoveEveryOther(object[] arr)
         {
             int newSize = (arr.Length + 1) / 2;  
@@ -26,7 +42,6 @@ namespace CodeWars8kyu
 
             //https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/csharp
         }
-
         public static string Remove_char(string s)
         {
             if (s.Length > 2)

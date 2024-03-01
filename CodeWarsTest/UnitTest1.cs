@@ -1,4 +1,5 @@
 using CodeWars8kyu;
+using System;
 
 namespace CodeWarsTest
 {
@@ -8,6 +9,11 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void DnaToRnaTest()
+            {
+                Assert.AreEqual("UUUU", Kata.DnaToRna("TTTT"));
+            }
 
             [Test]
             public void ReversedStringsTest()
@@ -18,9 +24,9 @@ namespace CodeWarsTest
             [Test]
             public void humanYearsCatYearsDogYearsTest()
             {
-                Assert.AreEqual(new int[] { 1, 15, 15 }, Kata.humanYearsCatYearsDogYears(1));
-                Assert.AreEqual(new int[] { 2, 24, 24 }, Kata.humanYearsCatYearsDogYears(2));
-                Assert.AreEqual(new int[] { 10, 56, 64 }, Kata.humanYearsCatYearsDogYears(10));
+                Assert.AreEqual(new int[] { 1, 15, 15 }, Kata.HumanYearsCatYearsDogYears(1));
+                Assert.AreEqual(new int[] { 2, 24, 24 }, Kata.HumanYearsCatYearsDogYears(2));
+                Assert.AreEqual(new int[] { 10, 56, 64 }, Kata.HumanYearsCatYearsDogYears(10));
             }
 
             [Test]
@@ -43,13 +49,13 @@ namespace CodeWarsTest
             }
 
             [Test]
-            public void boolToWordTest()
+            public void BoolToWordTest()
             {
-                Assert.AreEqual("Yes", Kata.boolToWord(true));
+                Assert.AreEqual("Yes", Kata.BoolToWord(true));
                 Console.WriteLine("Expected Yes");
-                Assert.AreEqual("Yes", Kata.boolToWord(true));
+                Assert.AreEqual("Yes", Kata.BoolToWord(true));
                 Console.WriteLine("Expected Yes");
-                Assert.AreEqual("No", Kata.boolToWord(false));
+                Assert.AreEqual("No", Kata.BoolToWord(false));
                 Console.WriteLine("Expected No");
             }
 

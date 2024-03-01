@@ -8,6 +8,24 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static string DnaToRna(string dna)
+        {
+            char[] charArray = dna.ToCharArray();
+
+            for (int i = 0; i < charArray.Length; i++)
+            {
+                if (charArray[i] == 'T')
+                {
+                    charArray[i] = 'U';
+                }
+
+            }
+
+            string complement = new string(charArray);
+            return complement;
+
+            //https://www.codewars.com/kata/5556282156230d0e5e000089/train/csharp
+        }
         public static string ReversedStrings(string str)
         {
             char[] charArray = str.ToCharArray();
@@ -16,7 +34,7 @@ namespace CodeWars8kyu
 
             //https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/csharp
         }
-        public static int[] humanYearsCatYearsDogYears(int humanYears)
+        public static int[] HumanYearsCatYearsDogYears(int humanYears)
         {
             int catYears;
             int dogYears;
@@ -70,7 +88,7 @@ namespace CodeWars8kyu
             return text;
             //https://www.codewars.com/kata/577bd026df78c19bca0002c0/train/csharp
         }
-        public static string boolToWord(bool word)
+        public static string BoolToWord(bool word)
         {
             string result = "";
             switch (word)

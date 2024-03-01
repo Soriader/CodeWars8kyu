@@ -8,6 +8,14 @@ namespace CodeWars8kyu
 {
     public static class Kata
     {
+        public static string ReversedStrings(string str)
+        {
+            char[] charArray = str.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+
+            //https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/csharp
+        }
         public static int[] humanYearsCatYearsDogYears(int humanYears)
         {
             int catYears;
@@ -45,7 +53,6 @@ namespace CodeWars8kyu
 
             //https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/csharp
         }
-
         public static int OtherAngle(int a, int b)
         {
             int c = 180 - a - b;

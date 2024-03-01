@@ -8,6 +8,13 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void ReversedStringsTest()
+            {
+                Assert.AreEqual("dlrow", Kata.ReversedStrings("world"));
+            }
+
             [Test]
             public void humanYearsCatYearsDogYearsTest()
             {

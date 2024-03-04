@@ -11,6 +11,12 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void ClockTest()
+            {
+                Assert.AreEqual(61000, ClockTask.Past(0, 1, 1));
+            }
+
+            [Test]
             public static void RentalCarTest()
             {
                 Assert.AreEqual(RentalCarTask.RentalCarCost(1), 40);

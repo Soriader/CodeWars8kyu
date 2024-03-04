@@ -10,6 +10,19 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void ZeroFuelTest()
+            {
+                Assert.AreEqual(true, ZeroFuelTask.ZeroFuel(50, 25, 2));
+                Assert.AreEqual(false, ZeroFuelTask.ZeroFuel(100, 50, 1));
+            }
+            [Test]
+            public void SampleTest()
+            {
+                var sheeps = new bool[] { true, false, true };
+
+                Assert.AreEqual(2, CountSheepsTask.CountSheeps(sheeps));
+            }
 
             [Test]
             public void BasicTests()

@@ -11,6 +11,14 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public static void RentalCarTest()
+            {
+                Assert.AreEqual(RentalCarTask.RentalCarCost(1), 40);
+                Assert.AreEqual(RentalCarTask.RentalCarCost(3), 100);
+                Assert.AreEqual(RentalCarTask.RentalCarCost(7), 230);
+            }
+
+            [Test]
             public void RockPaperScissorsTest()
             {
                 Assert.AreEqual("Player 1 won!", RockPaperScissorsTask.Rps("rock", "scissors"));

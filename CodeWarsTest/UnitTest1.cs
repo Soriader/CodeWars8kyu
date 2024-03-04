@@ -10,6 +10,19 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void RockPaperScissorsTest()
+            {
+                Assert.AreEqual("Player 1 won!", RockPaperScissorsTask.Rps("rock", "scissors"));
+                Assert.AreEqual("Player 1 won!", RockPaperScissorsTask.Rps("scissors", "paper"));
+                Assert.AreEqual("Player 1 won!", RockPaperScissorsTask.Rps("paper", "rock"));
+                Assert.AreEqual("Player 2 won!", RockPaperScissorsTask.Rps("scissors", "rock"));
+                Assert.AreEqual("Player 2 won!", RockPaperScissorsTask.Rps("paper", "scissors"));
+                Assert.AreEqual("Player 2 won!", RockPaperScissorsTask.Rps("rock", "paper")); 
+                Assert.AreEqual("Draw!", RockPaperScissorsTask.Rps("rock", "rock"));
+                Assert.AreEqual("Draw!", RockPaperScissorsTask.Rps("scissors", "scissors"));
+                Assert.AreEqual("Draw!", RockPaperScissorsTask.Rps("paper", "paper"));
+            }
 
             [Test]
             public void PaperWorkTest()

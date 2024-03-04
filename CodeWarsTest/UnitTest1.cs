@@ -11,6 +11,14 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void BetterThanAverageTest()
+            {
+                Assert.AreEqual(true, BetterThanAverageTask.BetterThanAverage(new int[] { 2, 3 }, 5));
+                Assert.AreEqual(true, BetterThanAverageTask.BetterThanAverage(new int[] { 100, 40, 34, 57, 29, 72, 57, 88 }, 75));
+                Assert.AreEqual(true, BetterThanAverageTask.BetterThanAverage(new int[] { 12, 23, 34, 45, 56, 67, 78, 89, 90 }, 69));
+            }
+
+            [Test]
             public void ClockTest()
             {
                 Assert.AreEqual(61000, ClockTask.Past(0, 1, 1));

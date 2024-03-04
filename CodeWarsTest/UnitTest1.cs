@@ -10,6 +10,17 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void PaperWorkTest()
+            {
+                Assert.AreEqual(25, PaperWorkTask.PaperWork(5, 5));
+                Assert.AreEqual(0, PaperWorkTask.PaperWork(5, -5));
+                Assert.AreEqual(0, PaperWorkTask.PaperWork(-5, -5));
+                Assert.AreEqual(0, PaperWorkTask.PaperWork(-5, 5));
+                Assert.AreEqual(0, PaperWorkTask.PaperWork(5, 0));
+            }
+
             [Test]
             public void SumArrayTest()
             {

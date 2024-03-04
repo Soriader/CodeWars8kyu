@@ -10,6 +10,17 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void AbbrevNameTest()
+            {
+                Assert.AreEqual("S.H", AbbrevNameTask.AbbrevName("Sam Harris"));
+                Assert.AreEqual("P.F", AbbrevNameTask.AbbrevName("Patrick Feenan"));
+                Assert.AreEqual("E.C", AbbrevNameTask.AbbrevName("Evan Cole"));
+                Assert.AreEqual("P.F", AbbrevNameTask.AbbrevName("P Favuzzi"));
+                Assert.AreEqual("D.M", AbbrevNameTask.AbbrevName("David Mendieta"));
+            }
+
             [Test]
             public void BetterThanAverageTest()
             {

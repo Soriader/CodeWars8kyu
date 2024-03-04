@@ -11,6 +11,16 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public static void GrasshopperSummationTest()
+            {
+                Assert.AreEqual(1, GrasshopperSummationTask.Summation(1));
+                Assert.AreEqual(36, GrasshopperSummationTask.Summation(8));
+                Assert.AreEqual(253, GrasshopperSummationTask.Summation(22));
+                Assert.AreEqual(5050, GrasshopperSummationTask.Summation(100));
+                Assert.AreEqual(22791, GrasshopperSummationTask.Summation(213));
+            }
+
+            [Test]
             public void ZeroFuelTest()
             {
                 Assert.AreEqual(true, ZeroFuelTask.ZeroFuel(50, 25, 2));

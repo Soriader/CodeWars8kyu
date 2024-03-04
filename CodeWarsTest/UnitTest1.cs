@@ -12,6 +12,14 @@ namespace CodeWarsTest
         {
 
             [Test]
+            public void BasicTests()
+            {
+                Assert.AreEqual(6, GrowTask.Grow(new[] { 1, 2, 3 }));
+                Assert.AreEqual(16, GrowTask.Grow(new[] { 4, 1, 1, 1, 4 }));
+                Assert.AreEqual(64, GrowTask.Grow(new[] { 2, 2, 2, 2, 2, 2 }));
+            }
+
+            [Test]
             public void AbbrevNameTest()
             {
                 Assert.AreEqual("S.H", AbbrevNameTask.AbbrevName("Sam Harris"));

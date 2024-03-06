@@ -1,6 +1,7 @@
 using CodeWars8kyu;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
+using static CodeWars8kyu.ConvertAStringToAnArrayTask;
 
 namespace CodeWarsTest
 {
@@ -11,9 +12,14 @@ namespace CodeWarsTest
         public class KataTest
         {
 
+            [Test]
+            public void ConvertAStringToAnArrayTest()
+            {
+                Assert.AreEqual(new string[] { "Robin", "Singh" }, ConvertAStringToAnArrayTask.StringToArray("Robin Singh"));
+                Assert.AreEqual(new string[] { "I", "love", "arrays", "they", "are", "my", "favorite" }, ConvertAStringToAnArrayTask.StringToArray("I love arrays they are my favorite"));
+            }
 
-       
-                [Test]
+            [Test]
             public void DoubleCharTest()
             {
                 Assert.AreEqual("aabbccdd", DoubleCharTask.DoubleChar("abcd"));

@@ -11,6 +11,15 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void YouOnlyNeedOneTest()
+            {
+                Assert.AreEqual(true, YouOnlyNeedOneTask.Check(new object[] { 66, 101 }, 66));
+                Assert.AreEqual(true, YouOnlyNeedOneTask.Check(new object[] { 80, 117, 115, 104, 45, 85, 112, 115 }, 45));
+                Assert.AreEqual(true, YouOnlyNeedOneTask.Check(new object[] { 't', 'e', 's', 't' }, 'e'));
+                Assert.AreEqual(false, YouOnlyNeedOneTask.Check(new object[] { "what", "a", "great", "kata" }, "kat"));
+            }
+
+            [Test]
             public static void GrasshopperSummationTest()
             {
                 Assert.AreEqual(1, GrasshopperSummationTask.Summation(1));
@@ -27,7 +36,7 @@ namespace CodeWarsTest
                 Assert.AreEqual(false, ZeroFuelTask.ZeroFuel(100, 50, 1));
             }
             [Test]
-            public void SampleTest()
+            public void CountSheepsTest()
             {
                 var sheeps = new bool[] { true, false, true };
 
@@ -35,7 +44,7 @@ namespace CodeWarsTest
             }
 
             [Test]
-            public void BasicTests()
+            public void GrowTest()
             {
                 Assert.AreEqual(6, GrowTask.Grow(new[] { 1, 2, 3 }));
                 Assert.AreEqual(16, GrowTask.Grow(new[] { 4, 1, 1, 1, 4 }));

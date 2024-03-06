@@ -11,6 +11,14 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void TotalPointsTask() 
+            {
+                Assert.AreEqual(12, TotalPointsTest.TotalPoints(new[] { "1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:4" }));
+                Assert.AreEqual(15, TotalPointsTest.TotalPoints(new[] { "1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4" }));
+                Assert.AreEqual(0, TotalPointsTest.TotalPoints(new[] { "0:1", "0:2", "0:3", "0:4", "1:2", "1:3", "1:4", "2:3", "2:4", "3:4" }));
+                Assert.AreEqual(10, TotalPointsTest.TotalPoints(new[] { "1:1", "2:2", "3:3", "4:4", "2:2", "3:3", "4:4", "3:3", "4:4", "4:4" }));
+            }
 
             [Test]
             public void ConvertAStringToAnArrayTest()

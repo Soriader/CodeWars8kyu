@@ -10,7 +10,20 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
-            [Test]
+
+
+       
+                [Test]
+            public void DoubleCharTest()
+            {
+                Assert.AreEqual("aabbccdd", DoubleCharTask.DoubleChar("abcd"));
+                Assert.AreEqual("AAddiiddaass", DoubleCharTask.DoubleChar("Adidas"));
+                Assert.AreEqual("11333377", DoubleCharTask.DoubleChar("1337"));
+                Assert.AreEqual("iilllluummiinnaattii", DoubleCharTask.DoubleChar("illuminati"));
+            }
+
+
+                [Test]
             public void YouOnlyNeedOneTest()
             {
                 Assert.AreEqual(true, YouOnlyNeedOneTask.Check(new object[] { 66, 101 }, 66));

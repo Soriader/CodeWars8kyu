@@ -11,6 +11,15 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void SwitchItUpTest()
+            {
+                Assert.AreEqual("One", SwitchItUpTask.SwitchItUp(1));
+                Assert.AreEqual("Three", SwitchItUpTask.SwitchItUp(3));
+                Assert.AreEqual("Five", SwitchItUpTask.SwitchItUp(5));
+            }
+
             [Test]
             public void MaximuAndMinimumValuesTest()
             {

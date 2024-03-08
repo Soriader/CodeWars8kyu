@@ -11,6 +11,15 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void IsItEvenTest()
+            {
+                Assert.AreEqual(true, IsItEvenTask.IsEven(0));
+                Assert.AreEqual(false, IsItEvenTask.IsEven(0.5));
+                Assert.AreEqual(false, IsItEvenTask.IsEven(1));
+                Assert.AreEqual(true, IsItEvenTask.IsEven(2));
+                Assert.AreEqual(true, IsItEvenTask.IsEven(-4));
+            }
 
             [Test]
             public void SwitchItUpTest()

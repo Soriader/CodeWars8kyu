@@ -11,7 +11,15 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
             [Test]
+            public void CalculateAverageTest()
+            {
+                Assert.AreEqual(200.0 / 13.0, CalculateAverageTask.FindAverage(new double[] { 17, 16, 16, 16, 16, 15, 17, 17, 15, 5, 17, 17, 16 }));
+                Assert.AreEqual(0, CalculateAverageTask.FindAverage(new double[] { }));
+            }
+
+        [Test]
             public void IsItEvenTest()
             {
                 Assert.AreEqual(true, IsItEvenTask.IsEven(0));

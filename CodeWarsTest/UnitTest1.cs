@@ -11,6 +11,12 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void VolumeOfACuboidTest()
+            {
+                Assert.AreEqual(60, VolumeOfACuboidTask.GetVolumeOfCuboid(2, 5, 6), 0.00001, "Length: 2, Width: 5, Height: 6");
+                Assert.AreEqual(94.5, VolumeOfACuboidTask.GetVolumeOfCuboid(6.3, 3, 5), 0.00001, "Length: 6.3, Width: 3, Height: 5");
+            }
 
             [Test]
             public void CalculateAverageTest()

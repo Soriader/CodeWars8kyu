@@ -12,6 +12,16 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void YouCantCodeUnderPressureTest()
+            {
+                Assert.AreEqual(200, YouCantCodeUnderPressureTask.DoubleInteger(100));
+                Assert.AreEqual(4, YouCantCodeUnderPressureTask.DoubleInteger(2));
+                Assert.AreEqual(8, YouCantCodeUnderPressureTask.DoubleInteger(4));
+                Assert.AreEqual(-20, YouCantCodeUnderPressureTask.DoubleInteger(-10));
+
+            }
+
+            [Test]
             public void VolumeOfACuboidTest()
             {
                 Assert.AreEqual(60, VolumeOfACuboidTask.GetVolumeOfCuboid(2, 5, 6), 0.00001, "Length: 2, Width: 5, Height: 6");

@@ -12,6 +12,17 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void GradeBookTest()
+            {
+                Assert.AreEqual('A', GradeBookTask.GetGrade(95, 90, 93));
+                Assert.AreEqual('B', GradeBookTask.GetGrade(70, 70, 100));
+                Assert.AreEqual('C', GradeBookTask.GetGrade(70, 71, 72));
+                Assert.AreEqual('D', GradeBookTask.GetGrade(65, 66, 60));
+                Assert.AreEqual('F', GradeBookTask.GetGrade(32, 15, 21));
+
+            }
+
+            [Test]
             public void YouCantCodeUnderPressureTest()
             {
                 Assert.AreEqual(200, YouCantCodeUnderPressureTask.DoubleInteger(100));

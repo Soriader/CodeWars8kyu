@@ -12,6 +12,14 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void FindTheSmallestIntegerTest()
+            {
+                Assert.AreEqual(11, FindTheSmallestIntegerTask.FindSmallestInt(new int[] { 78, 56, 232, 12, 11, 43 }));
+                Assert.AreEqual(-33, FindTheSmallestIntegerTask.FindSmallestInt(new int[] { 78, 56, -2, 12, 8, -33 }));
+
+            }
+
+            [Test]
             public void RemoveStringSpacesTest()
             {
                 Assert.AreEqual("8j8mBliB8gimjB8B8jlB", RemoveStringSpacesTask.NoSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));

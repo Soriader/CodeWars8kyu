@@ -11,6 +11,13 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void FakeBinaryTest()
+            {
+                Assert.AreEqual("01011110001100111", FakeBinaryTask.FakeBin("45385593107843568"));
+                Assert.AreEqual("101000111101101", FakeBinaryTask.FakeBin("509321967506747"));
+                Assert.AreEqual("011011110000101010000011011", FakeBinaryTask.FakeBin("366058562030849490134388085"));
+            }
 
             [Test]
             public void CountOfPositivesSumOfNegativesTest()

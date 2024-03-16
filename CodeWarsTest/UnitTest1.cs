@@ -12,6 +12,14 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void TrafficLightTest()
+            {
+                Assert.AreEqual("yellow", TrafficLightTask.UpdateLight("green"));
+                Assert.AreEqual("red", TrafficLightTask.UpdateLight("yellow"));
+                Assert.AreEqual("green", TrafficLightTask.UpdateLight("red"));
+            }
+
+            [Test]
             public void FindNeedleTest()
             {
                 Assert.AreEqual("found the needle at position 3", FindNeedleTask.FindNeedle(new object[] { '3', "123124234", null, "needle", "world", "hay", 2, '3', true, false }));

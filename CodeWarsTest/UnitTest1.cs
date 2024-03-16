@@ -11,6 +11,15 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
+            [Test]
+            public void CountOfPositivesSumOfNegativesTest()
+            {
+                Assert.AreEqual(new int[] { 10, -65 }, CountOfPositivesSumOfNegativesTask.CountPositivesSumNegatives(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15 }));
+                Assert.AreEqual(new int[] { 8, -50 }, CountOfPositivesSumOfNegativesTask.CountPositivesSumNegatives(new[] { 0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14 }));
+                Assert.AreEqual(new int[] { }, CountOfPositivesSumOfNegativesTask.CountPositivesSumNegatives(null));
+            }
+
             [Test]
             public void FindTheSmallestIntegerTest()
             {
@@ -62,7 +71,7 @@ namespace CodeWarsTest
                 Assert.AreEqual(0, CalculateAverageTask.FindAverage(new double[] { }));
             }
 
-        [Test]
+            [Test]
             public void IsItEvenTest()
             {
                 Assert.AreEqual(true, IsItEvenTask.IsEven(0));

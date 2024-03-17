@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void InvertValuesTest()
+                {
+                    Assert.AreEqual(new int[] { -1, -2, -3, -4, -5 }, InvertValuesTask.InvertValues(new int[] { 1, 2, 3, 4, 5 }));
+                    Assert.AreEqual(new int[] { -1, 2, -3, 4, -5 }, InvertValuesTask.InvertValues(new int[] { 1, -2, 3, -4, 5 }));
+                    Assert.AreEqual(new int[] { }, InvertValuesTask.InvertValues(new int[] { }));
+                    Assert.AreEqual(new int[] { 0 }, InvertValuesTask.InvertValues(new int[] { 0 }));
+                }
+
+                [Test]
                 public void StrCountAllStarCodeChallengeTest()
                 {
                     Assert.AreEqual(1, StrCountAllStarCodeChallengeTask.StrCount("Hello", 'o'));

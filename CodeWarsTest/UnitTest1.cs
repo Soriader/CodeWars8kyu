@@ -12,6 +12,14 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+            public void HowMuchILoveYouTest()
+            {
+                Assert.AreEqual("I love you", HowMuchILoveYouTask.HowMuchILoveYou(7));
+                Assert.AreEqual("a lot", HowMuchILoveYouTask.HowMuchILoveYou(3));
+                Assert.AreEqual("not at all", HowMuchILoveYouTask.HowMuchILoveYou(6));
+            }
+
+            [Test]
             public void TrafficLightTest()
             {
                 Assert.AreEqual("yellow", TrafficLightTask.UpdateLight("green"));

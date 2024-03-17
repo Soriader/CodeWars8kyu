@@ -11,8 +11,14 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
-            [Test]
 
+            [Test]
+            public void CalculateBMITest()
+            {
+                Assert.AreEqual("Normal", CalculateBMITask.Bmi(80, 1.80));
+            }
+
+            [Test]
             public void IsUpperCaseTest()
             {
                 Assert.AreEqual(false, IsUpperCaseTask.IsUpperCase("c"));

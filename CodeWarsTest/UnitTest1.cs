@@ -12,6 +12,18 @@ namespace CodeWarsTest
         public class KataTest
         {
             [Test]
+
+            public void IsUpperCaseTest()
+            {
+                Assert.AreEqual(false, IsUpperCaseTask.IsUpperCase("c"));
+                Assert.AreEqual(true, IsUpperCaseTask.IsUpperCase("C"));
+                Assert.AreEqual(false, IsUpperCaseTask.IsUpperCase("hello I AM DONALD"));
+                Assert.AreEqual(true, IsUpperCaseTask.IsUpperCase("HELLO I AM DONALD"));
+                Assert.AreEqual(false, IsUpperCaseTask.IsUpperCase("ACSKLDFJSgSKLDFJSKLDFJ"));
+                Assert.AreEqual(true, IsUpperCaseTask.IsUpperCase("ACSKLDFJSGSKLDFJSKLDFJ"));
+            }
+
+            [Test]
             public void HowMuchILoveYouTest()
             {
                 Assert.AreEqual("I love you", HowMuchILoveYouTask.HowMuchILoveYou(7));

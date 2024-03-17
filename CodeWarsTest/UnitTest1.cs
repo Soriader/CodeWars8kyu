@@ -11,6 +11,11 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+            [Test]
+            public void MakeUpperCaseTest()
+            {
+                Assert.AreEqual("HELLO", MakeUpperCaseTask.MakeUpperCase("hello"));
+            }
 
             [Test]
             public void CalculateBMITest()

@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SquareSumTaskTest()
+                {
+                    Assert.AreEqual(9, SquareSumTask.SquareSum(new int[] { 1, 2, 2 }));
+                    Assert.AreEqual(5, SquareSumTask.SquareSum(new int[] { 1, 2 }));
+                    Assert.AreEqual(50, SquareSumTask.SquareSum(new int[] { 5, 3, 4 }));
+                    Assert.AreEqual(0, SquareSumTask.SquareSum(new int[] { }));
+                }
+
+                [Test]
                 public void FinalGradeTest()
                 {
                     Assert.AreEqual(100, FinalGradeTask.FinalGrade(100, 12));

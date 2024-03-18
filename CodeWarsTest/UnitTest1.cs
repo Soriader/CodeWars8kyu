@@ -14,6 +14,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void TheFeastOfManyBeastsTest()
+                {
+                    Assert.AreEqual(true, TheFeastOfManyBeastsTask.Feast("great blue heron", "garlic naan"));
+                    Assert.AreEqual(true, TheFeastOfManyBeastsTask.Feast("chickadee", "chocolate cake"));
+                    Assert.AreEqual(false, TheFeastOfManyBeastsTask.Feast("brown bear", "bear claw"));
+                }
+
+                [Test]
                 public void LostWithoutAMapTest()
                 {
                     Assert.AreEqual(new[] { 2, 4, 6 }, LostWithoutAMapTask.Maps(new[] { 1, 2, 3 }));

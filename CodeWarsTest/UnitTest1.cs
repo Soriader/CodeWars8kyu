@@ -14,6 +14,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FinalGradeTest()
+                {
+                    Assert.AreEqual(100, FinalGradeTask.FinalGrade(100, 12));
+                    Assert.AreEqual(90, FinalGradeTask.FinalGrade(85, 5));
+                }
+
+                [Test]
                 public void TheFeastOfManyBeastsTest()
                 {
                     Assert.AreEqual(true, TheFeastOfManyBeastsTask.Feast("great blue heron", "garlic naan"));

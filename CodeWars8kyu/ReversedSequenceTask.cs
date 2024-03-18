@@ -29,5 +29,4 @@ namespace CodeWars8kyu
         }
     }
 }
-//Utwórz funkcję zwracającą tablicę liczb całkowitych od n do 1, gdzie n>0.
-//    Example : n = 5-- > [5, 4, 3, 2, 1]
+//https://www.codewars.com/kata/5a00e05cc374cb34d100000d/train/csharp

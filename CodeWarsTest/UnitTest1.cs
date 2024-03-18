@@ -13,6 +13,15 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void EnoughSpaceTest()
+                {
+                    Assert.AreEqual(0, EnoughSpaceTask.Enough(10, 5, 5));
+                    Assert.AreEqual(10, EnoughSpaceTask.Enough(100, 60, 50));
+                    Assert.AreEqual(0, EnoughSpaceTask.Enough(20, 5, 5));
+                }
+
                 [Test]
                 public void ReversedSequenceTest()
                 {

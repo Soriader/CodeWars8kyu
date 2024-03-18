@@ -14,6 +14,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SumWithoutHighestAndLowestNumberTest()
+                {
+                    Assert.AreEqual(16, SumWithoutHighestAndLowestNumberTask.Sum(new[] { 6, 2, 1, 8, 10 }));
+                }
+
+                [Test]
                 public void MessiGoalsFunctionTest()
                 {
                     Assert.AreEqual(9, MessiGoalsFunctionTask.GetGoals(1, 4, 4));

@@ -14,6 +14,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ReversedSequenceTest()
+                {
+                    Assert.That(ReversedSequenceTask.ReverseSeq(5), Is.EqualTo(new int[] { 5, 4, 3, 2, 1 }));
+                }
+
+                [Test]
                 public void SumWithoutHighestAndLowestNumberTest()
                 {
                     Assert.AreEqual(16, SumWithoutHighestAndLowestNumberTask.Sum(new[] { 6, 2, 1, 8, 10 }));

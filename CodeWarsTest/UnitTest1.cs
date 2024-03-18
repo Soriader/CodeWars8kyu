@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void MessiGoalsFunctionTest()
+                {
+                    Assert.AreEqual(9, MessiGoalsFunctionTask.GetGoals(1, 4, 4));
+                    Assert.AreEqual(11, MessiGoalsFunctionTask.GetGoals(1, 6, 4));
+                    Assert.AreEqual(15, MessiGoalsFunctionTask.GetGoals(10, 4, 1));
+                    Assert.AreEqual(0, MessiGoalsFunctionTask.GetGoals(0, 0, 0));
+                }
+
+                [Test]
                 public void SquareSumTaskTest()
                 {
                     Assert.AreEqual(9, SquareSumTask.SquareSum(new int[] { 1, 2, 2 }));

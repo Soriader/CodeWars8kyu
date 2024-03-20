@@ -13,6 +13,16 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void DebugSayHelloTest()
+                {
+                    Assert.AreEqual("Hello, Mr. Spock", SuperDuperEasyTask.Problem("Mr. Spock"));
+                    Assert.AreEqual("Hello, Captain Kirk", SuperDuperEasyTask.Problem("Captain Kirk"));
+                    Assert.AreEqual("Hello, Liutenant Uhura", SuperDuperEasyTask.Problem("Liutenant Uhur"));
+
+                }
+
                 [Test]
                 public void SuperDuperEasyTest()
                 {

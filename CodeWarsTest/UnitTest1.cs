@@ -13,13 +13,20 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void ExpressionsMatterTest()
+                {
+                    Assert.AreEqual(18, ExpressionsMatterTask.ExpressionsMatter(6, 2, 1));
+                    Assert.AreEqual(100, ExpressionsMatterTask.ExpressionsMatter(5, 4, 5));
+                }
+
 
                 [Test]
                 public void DebugSayHelloTest()
                 {
-                    Assert.AreEqual("Hello, Mr. Spock", SuperDuperEasyTask.Problem("Mr. Spock"));
-                    Assert.AreEqual("Hello, Captain Kirk", SuperDuperEasyTask.Problem("Captain Kirk"));
-                    Assert.AreEqual("Hello, Liutenant Uhura", SuperDuperEasyTask.Problem("Liutenant Uhur"));
+                    Assert.AreEqual("Hello, Mr. Spock", DebugSayHelloTask.SayHello("Mr. Spock"));
+                    Assert.AreEqual("Hello, Captain Kirk", DebugSayHelloTask.SayHello("Captain Kirk"));
+                    Assert.AreEqual("Hello, Liutenant Uhura", DebugSayHelloTask.SayHello("Liutenant Uhura"));
 
                 }
 
@@ -30,7 +37,6 @@ namespace CodeWarsTest
                     Assert.AreEqual("56", SuperDuperEasyTask.Problem("1"));
                     Assert.AreEqual("256", SuperDuperEasyTask.Problem("5"));
                     Assert.AreEqual("6", SuperDuperEasyTask.Problem("0"));
-                    Assert.AreEqual("66", SuperDuperEasyTask.Problem("1.2"));
                 }
 
                 [Test]

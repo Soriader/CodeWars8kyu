@@ -15,6 +15,24 @@ namespace CodeWarsTest
             {
 
                 [Test]
+                public void ParseIntToCharTest()
+                {
+                    Assert.AreEqual(3, ParseIntToCharTask.GetAge("3 years old"));
+                    Assert.AreEqual(4, ParseIntToCharTask.GetAge("4 years old"));
+                    Assert.AreEqual(9, ParseIntToCharTask.GetAge("9 years old"));
+                }
+
+                [Test]
+                public void WelcomeMethodTest()
+                {
+                    Assert.AreEqual("Welcome", WelcomeMethodTask.Greet("english"));
+                    Assert.AreEqual("Welkom", WelcomeMethodTask.Greet("dutch"));
+                    Assert.AreEqual("Welcome", WelcomeMethodTask.Greet("IP_ADDRESS_INVALID"));
+                    Assert.AreEqual("Welcome", WelcomeMethodTask.Greet(""));
+                    Assert.AreEqual("Welcome", WelcomeMethodTask.Greet("2"));
+                }
+
+                [Test]
                 public void EnoughSpaceTest()
                 {
                     Assert.AreEqual(0, EnoughSpaceTask.Enough(10, 5, 5));

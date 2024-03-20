@@ -13,6 +13,15 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void SuperDuperEasyTest()
+                {
+                    Assert.AreEqual("Error", SuperDuperEasyTask.Problem("hello"));
+                    Assert.AreEqual("56", SuperDuperEasyTask.Problem("1"));
+                    Assert.AreEqual("256", SuperDuperEasyTask.Problem("5"));
+                    Assert.AreEqual("6", SuperDuperEasyTask.Problem("0"));
+                    Assert.AreEqual("66", SuperDuperEasyTask.Problem("1.2"));
+                }
 
                 [Test]
                 public void ParseIntToCharTest()

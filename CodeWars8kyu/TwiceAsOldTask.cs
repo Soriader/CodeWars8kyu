@@ -10,13 +10,18 @@ namespace CodeWars8kyu
     {
         public static int TwiceAsOld(int dadYears, int sonYears)
         {
-            if (dadYears >= 2* sonYears) 
-            {
-                return dadYears - sonYears;
-            }
+            int ageDifference = dadYears - sonYears;
 
-            return 0;
+            if (ageDifference >= sonYears)
+            {
+                return ageDifference - sonYears;
+            }
+            else
+            {
+                return sonYears * 2 - dadYears;
+            }
 
         }
     }
 }
+//https://www.codewars.com/kata/5b853229cfde412a470000d0/train/csharp

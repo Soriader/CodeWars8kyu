@@ -11,8 +11,19 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
             class Test
             {
+                [Test]
+                public void ExclusiveXorLogicalOperatorTest()
+                {
+                    Assert.AreEqual(false, ExclusiveXorLogicalOperatorTask.Xor(false, false));
+                    Assert.AreEqual(true, ExclusiveXorLogicalOperatorTask.Xor(true, false));
+                    Assert.AreEqual(true, ExclusiveXorLogicalOperatorTask.Xor(false, true));
+                    Assert.AreEqual(false, ExclusiveXorLogicalOperatorTask.Xor(true, true));
+
+                }
+
                 [Test]
                 public void TwiceAsOldTest()
                 {

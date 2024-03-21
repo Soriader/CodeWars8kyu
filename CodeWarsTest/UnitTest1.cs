@@ -14,6 +14,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void TwiceAsOldTest()
+                {
+                    Assert.AreEqual(30, TwiceAsOldTask.TwiceAsOld(30, 0));
+                    Assert.AreEqual(16, TwiceAsOldTask.TwiceAsOld(30, 7));
+                    Assert.AreEqual(15, TwiceAsOldTask.TwiceAsOld(45, 30));
+                }
+
+                [Test]
                 public void ExpressionsMatterTest()
                 {
                     Assert.AreEqual(18, ExpressionsMatterTask.ExpressionsMatter(6, 2, 1));

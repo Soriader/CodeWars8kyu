@@ -14,6 +14,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void LarioAndMuigiTest()
+                {
+                    Assert.AreEqual(new List<int> { 2 }, LarioAndMuigiTask.PipeFix(new List<int> { 2 }));
+                    Assert.AreEqual(new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, LarioAndMuigiTask.PipeFix(new List<int> { 1, 2, 3, 5, 6, 8, 9 }));
+                    Assert.AreEqual(new List<int> { -1, 0, 1, 2, 3, 4 }, LarioAndMuigiTask.PipeFix(new List<int> { -1, 4 }));
+                    Assert.AreEqual(new List<int> { 6, 7, 8, 9 }, LarioAndMuigiTask.PipeFix(new List<int> { 6, 9 }));
+                    Assert.AreEqual(new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }, LarioAndMuigiTask.PipeFix(new List<int> { 1, 2, 3, 12 }));
+                }
+
+                [Test]
                 public void DrinkAboutTest()
                 {
                     Assert.AreEqual("drink whisky", DrinkAboutTask.PeopleWithAgeDrink(22));

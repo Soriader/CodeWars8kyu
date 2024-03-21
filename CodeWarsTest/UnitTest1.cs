@@ -13,7 +13,16 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void DrinkAboutTest()
+                {
+                    Assert.AreEqual("drink whisky", DrinkAboutTask.PeopleWithAgeDrink(22));
+                    Assert.AreEqual("drink toddy", DrinkAboutTask.PeopleWithAgeDrink(12));
+                    Assert.AreEqual("drink coke", DrinkAboutTask.PeopleWithAgeDrink(15));
+                    Assert.AreEqual("drink beer", DrinkAboutTask.PeopleWithAgeDrink(20));
+                    Assert.AreEqual("drink whisky", DrinkAboutTask.PeopleWithAgeDrink(28));
 
+                }
                 [Test]
                 public static void CountByXTest()
                 {

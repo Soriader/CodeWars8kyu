@@ -11,9 +11,17 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
-
             class Test
             {
+
+                [Test]
+                public static void CountByXTest()
+                {
+                    Assert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, CountByXTask.CountBy(1, 5));
+                    Assert.AreEqual(new int[] { 2, 4, 6, 8, 10 }, CountByXTask.CountBy(2, 5));
+                }
+
+
                 [Test]
                 public void ExclusiveXorLogicalOperatorTest()
                 {

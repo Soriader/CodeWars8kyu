@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SetAlarmTest()
+                {
+                    Assert.AreEqual(false, SetAlarmTask.SetAlarm(true, true));
+                    Assert.AreEqual(false, SetAlarmTask.SetAlarm(false, true));
+                    Assert.AreEqual(true, SetAlarmTask.SetAlarm(true, false));
+                    Assert.AreEqual(false, SetAlarmTask.SetAlarm(false, false));
+                }
+
+                [Test]
                 public void IsHeGonnaSurviveTest() 
                 { 
                     Assert.AreEqual(false, IsHeGonnaSurviveTask.Hero(0,1));

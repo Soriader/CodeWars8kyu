@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void IsHeGonnaSurviveTest() 
+                { 
+                    Assert.AreEqual(false, IsHeGonnaSurviveTask.Hero(0,1));
+                    Assert.AreEqual(true, IsHeGonnaSurviveTask.Hero(100,40));
+                    Assert.AreEqual(false, IsHeGonnaSurviveTask.Hero(5,10));
+                    Assert.AreEqual(true, IsHeGonnaSurviveTask.Hero(10,5));
+                }
+
+                [Test]
                 public void LarioAndMuigiTest()
                 {
                     Assert.AreEqual(new List<int> { 2 }, LarioAndMuigiTask.PipeFix(new List<int> { 2 }));

@@ -12,7 +12,15 @@ namespace CodeWarsTest
         public class KataTest
         {
             class Test
-            {
+            { 
+                [Test]
+                public void FindThePositionTest()
+                {
+                    Assert.AreEqual("Position of alphabet: 1", FindThePositionTask.Position('a'));
+                    Assert.AreEqual("Position of alphabet: 26", FindThePositionTask.Position('z'));
+                    Assert.AreEqual("Position of alphabet: 5", FindThePositionTask.Position('e'));
+                }
+
                 [Test]
                 public void SetAlarmTest()
                 {

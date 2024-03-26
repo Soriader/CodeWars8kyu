@@ -14,6 +14,11 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FiveWithoutNumbersTest()
+                {
+                    Assert.That(FiveWithoutNumbersTask.UnusualFive(), Is.EqualTo(5));
+                }
+                [Test]
                 public void FindMultiplesOfANumberTest()
                 {
                     Assert.AreEqual(new List<int> { 5, 10, 15, 20, 25 }, FindMultiplesOfANumberTask.FindMultiples(5, 25));

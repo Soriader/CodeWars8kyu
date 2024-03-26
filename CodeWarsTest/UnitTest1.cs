@@ -14,6 +14,22 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void RemoveAllExclamationMarksTest()
+                {
+                    Assert.AreEqual("", RemoveAllExclamationMarksTask.RemoveExclamationMarks(""), "Input: Empty string");
+                    Assert.AreEqual("", RemoveAllExclamationMarksTask.RemoveExclamationMarks("!"), "Input: " + "!");
+                    Assert.AreEqual("", RemoveAllExclamationMarksTask.RemoveExclamationMarks("!!"), "Input: " + "!!");
+                    Assert.AreEqual("Hi", RemoveAllExclamationMarksTask.RemoveExclamationMarks("Hi!"), "Input: " + "Hi!");
+                    Assert.AreEqual("?", RemoveAllExclamationMarksTask.RemoveExclamationMarks("!?!"), "Input: " + "!?!");
+                }
+
+                [Test]
+                public void TerminalGameMoveFunctionTest()
+                {
+                    Assert.That(TerminalGameMoveFunctionTask.Move(0, 4), Is.EqualTo(8));
+                }
+
+                [Test]
                 public void FiveWithoutNumbersTest()
                 {
                     Assert.That(FiveWithoutNumbersTask.UnusualFive(), Is.EqualTo(5));

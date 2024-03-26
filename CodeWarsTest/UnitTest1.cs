@@ -14,6 +14,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FindMultiplesOfANumberTest()
+                {
+                    Assert.AreEqual(new List<int> { 5, 10, 15, 20, 25 }, FindMultiplesOfANumberTask.FindMultiples(5, 25));
+                    Assert.AreEqual(new List<int> { 1, 2 }, FindMultiplesOfANumberTask.FindMultiples(1, 2));
+                }
+
+                [Test]
                 public void RemoveAnExclamationTest()
                 {
                     Assert.AreEqual("Hi", RemoveAnExclamationTask.Remove("Hi!"));

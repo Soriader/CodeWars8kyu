@@ -12,7 +12,18 @@ namespace CodeWarsTest
         public class KataTest
         {
             class Test
-            { 
+            {
+                [Test]
+                public void SumTheStringsTest()
+                {
+                    Assert.AreEqual("9", SumTheStringsTask.StringsSum("4", "5"));
+                    Assert.AreEqual("39", SumTheStringsTask.StringsSum("34", "5"));
+                    Assert.AreEqual("9", SumTheStringsTask.StringsSum("", "9"));
+                    Assert.AreEqual("9", SumTheStringsTask.StringsSum("9", ""));
+                    Assert.AreEqual("0", SumTheStringsTask.StringsSum("", ""));
+                }
+
+
                 [Test]
                 public void FindThePositionTest()
                 {

@@ -14,6 +14,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void BasicMathematicalOperationsTest()
+                {
+                    Assert.AreEqual(11, BasicMathematicalOperationsTask.basicOp('+', 4, 7));
+                    Assert.AreEqual(-3, BasicMathematicalOperationsTask.basicOp('-', 15, 18));
+                    Assert.AreEqual(25, BasicMathematicalOperationsTask.basicOp('*', 5, 5));
+                    Assert.AreEqual(7, BasicMathematicalOperationsTask.basicOp('/', 49, 7));
+                    Assert.AreEqual(0, BasicMathematicalOperationsTask.basicOp('x', 55, 7));
+                }
+
+                [Test]
                 public void SumTheStringsTest()
                 {
                     Assert.AreEqual("9", SumTheStringsTask.StringsSum("4", "5"));

@@ -14,6 +14,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void RemoveAnExclamationTest()
+                {
+                    Assert.AreEqual("Hi", RemoveAnExclamationTask.Remove("Hi!"));
+                    Assert.AreEqual("Hi!!", RemoveAnExclamationTask.Remove("Hi!!!"));
+                    Assert.AreEqual("!Hi", RemoveAnExclamationTask.Remove("!Hi"));
+                    Assert.AreEqual("!Hi", RemoveAnExclamationTask.Remove("!Hi!"));
+                    Assert.AreEqual("Hi! Hi", RemoveAnExclamationTask.Remove("Hi! Hi"));
+                    Assert.AreEqual("Hi", RemoveAnExclamationTask.Remove("Hi"));
+                }
+
+                [Test]
                 public void BasicMathematicalOperationsTest()
                 {
                     Assert.AreEqual(11, BasicMathematicalOperationsTask.basicOp('+', 4, 7));

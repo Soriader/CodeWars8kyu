@@ -11,7 +11,6 @@ namespace CodeWars8kyu
         public static int Litres(double time)
         {
             return (int)(time / 2);
-
         }
     }
 }

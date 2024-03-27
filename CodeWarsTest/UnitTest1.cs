@@ -13,6 +13,13 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public static void TerminalGameCombatFunctionTest()
+                {
+                    Assert.AreEqual(95, TerminalGameCombatFunctionTask.Combat(100, 5));
+                    Assert.AreEqual(84, TerminalGameCombatFunctionTask.Combat(92, 8));
+                    Assert.AreEqual(0, TerminalGameCombatFunctionTask.Combat(20, 30));
+                }
 
                 [Test]
                 public static void KeepHydratedTest()

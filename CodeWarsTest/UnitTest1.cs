@@ -13,6 +13,17 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void EvenOrOddTest()
+                {
+                    Assert.AreEqual("Even", EvenOrOddTask.EvenOrOdd(0));
+                    Assert.AreEqual("Odd", EvenOrOddTask.EvenOrOdd(5));
+                    Assert.AreEqual("Even", EvenOrOddTask.EvenOrOdd(8));
+                    Assert.AreEqual("Odd", EvenOrOddTask.EvenOrOdd(3));
+                }
+
+
                 [Test]
                 public static void AreYouPlayingBanjoTest()
                 {

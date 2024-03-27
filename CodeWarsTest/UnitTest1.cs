@@ -13,6 +13,19 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public static void KeepHydratedTest()
+                {
+                    Assert.AreEqual(6, KeepHydratedTask.Litres(12.3));
+                    Assert.AreEqual(0, KeepHydratedTask.Litres(1.4));
+                    Assert.AreEqual(1, KeepHydratedTask.Litres(2));
+                    Assert.AreEqual(0, KeepHydratedTask.Litres(0.82));
+                    Assert.AreEqual(893, KeepHydratedTask.Litres(1787));
+                    Assert.AreEqual(5, KeepHydratedTask.Litres(11.8));
+                    Assert.AreEqual(0, KeepHydratedTask.Litres(0));
+                }
+
                 [Test]
                 public void WideMouthedFrogTest()
                 {

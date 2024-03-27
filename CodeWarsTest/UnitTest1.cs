@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void AreYouPlayingBanjoTest()
+                {
+                    Assert.AreEqual("Martin does not play banjo", AreYouPlayingBanjoTask.AreYouPlayingBanjo("Martin"));
+                    Assert.AreEqual("Rikke plays banjo", AreYouPlayingBanjoTask.AreYouPlayingBanjo("Rikke"));
+                    Assert.AreEqual("rolf plays banjo", AreYouPlayingBanjoTask.AreYouPlayingBanjo("rolf"));
+                    Assert.AreEqual("bravo does not play banjo", AreYouPlayingBanjoTask.AreYouPlayingBanjo("bravo"));
+                }
+
+                [Test]
                 public static void CenturyFromYearTest()
                 {
                     Assert.AreEqual(18, CenturyYearTask.СenturyYear(1701));

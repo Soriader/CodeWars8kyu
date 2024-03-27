@@ -14,6 +14,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void WideMouthedFrogTest()
+                {
+                    Assert.AreEqual("wide", WideMouthedFrogTask.MouthSize("toucan"));
+                    Assert.AreEqual("wide", WideMouthedFrogTask.MouthSize("ant bear"));
+                    Assert.AreEqual("small", WideMouthedFrogTask.MouthSize("alligator"));
+                }
+
+                [Test]
                 public static void RemoveAllExclamationMarksTest()
                 {
                     Assert.AreEqual("", RemoveAllExclamationMarksTask.RemoveExclamationMarks(""), "Input: Empty string");

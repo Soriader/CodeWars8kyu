@@ -1,4 +1,4 @@
-using CodeWars8kyu;
+﻿using CodeWars8kyu;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
 using static CodeWars8kyu.ConvertAStringToAnArrayTask;
@@ -13,6 +13,15 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public static void CenturyFromYearTest()
+                {
+                    Assert.AreEqual(18, CenturyYearTask.СenturyYear(1701));
+                    Assert.AreEqual(19, CenturyYearTask.СenturyYear(1900));
+                    Assert.AreEqual(17, CenturyYearTask.СenturyYear(1601));
+                    Assert.AreEqual(20, CenturyYearTask.СenturyYear(2000));
+                }
+
                 [Test]
                 public static void TerminalGameCombatFunctionTest()
                 {

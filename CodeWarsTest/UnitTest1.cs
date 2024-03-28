@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void DifferenceOfVolumesOfCuboidsTest()
+                {
+                    Assert.AreEqual(14, DifferenceOfVolumesOfCuboidsTask.FindDifference(new int[] { 3, 2, 5 }, new int[] { 1, 4, 4 } ));
+                    Assert.AreEqual(106, DifferenceOfVolumesOfCuboidsTask.FindDifference(new int[] { 9, 7, 2 }, new int[] { 5, 2, 2 }));
+                    Assert.AreEqual(30, DifferenceOfVolumesOfCuboidsTask.FindDifference(new int[] { 11, 2, 5 }, new int[] { 1, 10, 8 } ));
+                }
+
+
+                [Test]
                 public void PersonalizedMessageTest()
                 {
                     Assert.AreEqual("Hello boss", PersonalizedMessageTask.Greet("Daniel", "Daniel"));

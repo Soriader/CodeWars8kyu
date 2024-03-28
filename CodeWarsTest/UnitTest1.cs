@@ -13,6 +13,12 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void PersonalizedMessageTest()
+                {
+                    Assert.AreEqual("Hello boss", PersonalizedMessageTask.Greet("Daniel", "Daniel"));
+                    Assert.AreEqual("Hello guest", PersonalizedMessageTask.Greet("Greg", "Daniel"));
+                }
 
                 [Test]
                 public void EvenOrOddTest()

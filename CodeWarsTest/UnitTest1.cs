@@ -13,6 +13,17 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void LoveDetectorTest()
+                {
+                    Assert.AreEqual(false, LoveDetectorTask.Lovefunc(2, 2));
+                    Assert.AreEqual(true, LoveDetectorTask.Lovefunc(1, 4));
+                    Assert.AreEqual(false, LoveDetectorTask.Lovefunc(0, 0));
+                    Assert.AreEqual(true, LoveDetectorTask.Lovefunc(0, 1));
+                }
+
+
                 [Test]
                 public void DifferenceOfVolumesOfCuboidsTest()
                 {

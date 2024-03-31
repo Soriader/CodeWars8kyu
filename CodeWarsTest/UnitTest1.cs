@@ -13,6 +13,14 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void CockroachTest()
+                {
+                    Assert.AreEqual(30, CockroachTask.CockroachSpeed(1.08));
+                    Assert.AreEqual(30, CockroachTask.CockroachSpeed(1.09));
+                    Assert.AreEqual(0, CockroachTask.CockroachSpeed(0));
+                }
+
 
                 [Test]
                 public static void CheckForFactorTest()

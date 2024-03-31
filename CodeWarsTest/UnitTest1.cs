@@ -15,6 +15,17 @@ namespace CodeWarsTest
             {
 
                 [Test]
+                public static void CheckForFactorTest()
+                {
+                    Assert.AreEqual(true, CheckForFactorTask.CheckForFactor(10, 2));
+                    Assert.AreEqual(true, CheckForFactorTask.CheckForFactor(63, 7));
+                    Assert.AreEqual(true, CheckForFactorTask.CheckForFactor(2450, 5));
+                    Assert.AreEqual(false, CheckForFactorTask.CheckForFactor(653, 7));
+                    Assert.AreEqual(false, CheckForFactorTask.CheckForFactor(9, 2));
+                    Assert.AreEqual(false, CheckForFactorTask.CheckForFactor(24617, 3));
+                }
+
+                [Test]
                 public void LoveDetectorTest()
                 {
                     Assert.AreEqual(false, LoveDetectorTask.Lovefunc(2, 2));

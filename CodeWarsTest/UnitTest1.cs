@@ -13,6 +13,12 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void AddLengthTest()
+                {
+                    Assert.AreEqual(new string[] { "apple 5", "ban 3" }, AddLengthTask.AddLength("apple ban"));
+                    Assert.AreEqual(new string[] { "you 3", "will 4", "win 3" }, AddLengthTask.AddLength("you will win"));
+                }
 
                 [Test]
                 public void MultiplicationTableTest()

@@ -14,6 +14,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ConvertAStringToANumberTest()
+                {
+                    Assert.AreEqual(1234, ConvertAStringToANumberTask.StringToNumber("1234"));
+                    Assert.AreEqual(605, ConvertAStringToANumberTask.StringToNumber("605"));
+                    Assert.AreEqual(1405, ConvertAStringToANumberTask.StringToNumber("1405"));
+                    Assert.AreEqual(-7, ConvertAStringToANumberTask.StringToNumber("-7"));
+                }
+
+                [Test]
                 public void XXAndXYChromosomesTest()
                 {
                     Assert.AreEqual("Congratulations! You're going to have a son.", XXAndXYChromosomesTask.ChromosomeCheck("XY"));

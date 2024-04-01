@@ -1,6 +1,7 @@
 ﻿using CodeWars8kyu;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
+using System.Numerics;
 using static CodeWars8kyu.ConvertAStringToAnArrayTask;
 
 namespace CodeWarsTest
@@ -13,6 +14,16 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void PowersOfTwoTest()
+                {
+                    Assert.AreEqual(new BigInteger[] { 1 }, PowersOfTwoTask.PowersOfTwo(0));
+                    Assert.AreEqual(new BigInteger[] { 1, 2 }, PowersOfTwoTask.PowersOfTwo(1));
+                    Assert.AreEqual(new BigInteger[] { 1, 2, 4, 8, 16 }, PowersOfTwoTask.PowersOfTwo(4));
+                }
+
+
                 [Test]
                 public void ConvertAStringToANumberTest()
                 {

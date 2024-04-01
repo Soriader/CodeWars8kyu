@@ -14,6 +14,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void XXAndXYChromosomesTest()
+                {
+                    Assert.AreEqual("Congratulations! You're going to have a son.", XXAndXYChromosomesTask.ChromosomeCheck("XY"));
+                    Assert.AreEqual("Congratulations! You're going to have a daughter.", XXAndXYChromosomesTask.ChromosomeCheck("XX"));
+                }
+
+                [Test]
                 public void AddLengthTest()
                 {
                     Assert.AreEqual(new string[] { "apple 5", "ban 3" }, AddLengthTask.AddLength("apple ban"));

@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void JustCountSheepTest()
+                {
+                    Assert.That(JustCountSheepTask.CountSheep(0), Is.EqualTo(""));
+                    Assert.That(JustCountSheepTask.CountSheep(1), Is.EqualTo("1 sheep..."));
+                    Assert.That(JustCountSheepTask.CountSheep(2), Is.EqualTo("1 sheep...2 sheep..."));
+                    Assert.That(JustCountSheepTask.CountSheep(3), Is.EqualTo("1 sheep...2 sheep...3 sheep..."));
+                }
+                [Test]
                 public void WhatIsBetweenTest()
                 {
                     Assert.AreEqual(new int[] { 0, 1, 2, 3 }, WhatIsBetweenTask.Between(0, 3));

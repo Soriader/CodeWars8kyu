@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void VowelRemoverTest()
+                {
+                    Assert.AreEqual("hll", VowelRemoverTask.Shortcut("hello"));
+                    Assert.AreEqual("hw r y tdy?", VowelRemoverTask.Shortcut("how are you today?"));
+                    Assert.AreEqual("cmpln", VowelRemoverTask.Shortcut("complain"));
+                    Assert.AreEqual("nvr", VowelRemoverTask.Shortcut("never"));
+
+                }
+
+                [Test]
                 public void JustCountSheepTest()
                 {
                     Assert.That(JustCountSheepTask.CountSheep(0), Is.EqualTo(""));

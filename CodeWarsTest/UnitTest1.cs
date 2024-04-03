@@ -15,6 +15,29 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void HelloNameOrWorldTest()
+                {
+                    Assert.AreEqual("Hello, Jeff!", HelloNameOrWorldTask.Hello("jEFF"));
+                    Assert.AreEqual("Hello, Tony!", HelloNameOrWorldTask.Hello("tonY"));
+                    Assert.AreEqual("Hello, Alicia!", HelloNameOrWorldTask.Hello("Alicia"));
+                    Assert.AreEqual("Hello, Vasya!", HelloNameOrWorldTask.Hello("vasya"));
+                    Assert.AreEqual("Hello, John!", HelloNameOrWorldTask.Hello("JOHN"));
+                    Assert.AreEqual("Hello, World!", HelloNameOrWorldTask.Hello(""));
+                    Assert.AreEqual("Hello, World!", HelloNameOrWorldTask.Hello(null));
+                }
+
+
+                [Test]
+                public void BasicFunctionFixerTest()
+                {
+                    Assert.AreEqual(10, BasicFunctionFixerTask.AddFive(5));
+                    Assert.AreEqual(15, BasicFunctionFixerTask.AddFive(10));
+                    Assert.AreEqual(30, BasicFunctionFixerTask.AddFive(25));
+                    Assert.AreEqual(88, BasicFunctionFixerTask.AddFive(83));
+
+                }
+
+                [Test]
                 public void VowelRemoverTest()
                 {
                     Assert.AreEqual("hll", VowelRemoverTask.Shortcut("hello"));

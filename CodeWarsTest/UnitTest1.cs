@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ArrayMeanTest()
+                {
+                    Assert.AreEqual(1, ArrayMeanTask.FindAverage(new[] { 1 }));
+                    Assert.AreEqual(4, ArrayMeanTask.FindAverage(new[] { 1, 3, 5, 7 }));
+                    Assert.AreEqual(-5, ArrayMeanTask.FindAverage(new[] { -10, -5, -5, 0 }));
+                    Assert.AreEqual(0, ArrayMeanTask.FindAverage(new[] { 0 }));
+
+                }
+
+                [Test]
                 public void HelloNameOrWorldTest()
                 {
                     Assert.AreEqual("Hello, Jeff!", HelloNameOrWorldTask.Hello("jEFF"));

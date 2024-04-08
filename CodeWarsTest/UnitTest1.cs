@@ -14,6 +14,14 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void ConvertNumberToReversedArrayOfDigitsTest()
+                {
+                    Assert.AreEqual(new long[] { 1, 3, 2, 5, 3 }, ConvertNumberToReversedArrayOfDigitsTask.Digitize(35231));
+                    Assert.AreEqual(new long[] { 0 }, ConvertNumberToReversedArrayOfDigitsTask.Digitize(0));
+                }
+
                 [Test]
                 public void StringCleaningTest()
                 {

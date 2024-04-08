@@ -16,6 +16,15 @@ namespace CodeWarsTest
             {
 
                 [Test]
+                public void ReversingWordsInAStringTest()
+                {
+                    Assert.AreEqual("World Hello", ReversingWordsInAStringTask.Reverse("Hello World"));
+                    Assert.AreEqual("There. Hi", ReversingWordsInAStringTask.Reverse("Hi There."));
+
+                    Assert.AreEqual("this at expert an am I", ReversingWordsInAStringTask.Reverse("I am an expert at this"));
+                }
+
+                [Test]
                 public void ConvertNumberToReversedArrayOfDigitsTest()
                 {
                     Assert.AreEqual(new long[] { 1, 3, 2, 5, 3 }, ConvertNumberToReversedArrayOfDigitsTask.Digitize(35231));

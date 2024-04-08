@@ -14,13 +14,19 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void TakeTheDerivativeTest()
+                {
+                    Assert.AreEqual("56x^7", TakeTheDerivativeTask.Derive(7, 8));
+                    Assert.AreEqual("45x^8", TakeTheDerivativeTask.Derive(5, 9));
+
+                }
 
                 [Test]
                 public void ReversingWordsInAStringTest()
                 {
                     Assert.AreEqual("World Hello", ReversingWordsInAStringTask.Reverse("Hello World"));
                     Assert.AreEqual("There. Hi", ReversingWordsInAStringTask.Reverse("Hi There."));
-
                     Assert.AreEqual("this at expert an am I", ReversingWordsInAStringTask.Reverse("I am an expert at this"));
                 }
 

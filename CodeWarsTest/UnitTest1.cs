@@ -15,8 +15,22 @@ namespace CodeWarsTest
 
             class Test
             {
+
                 [Test]
-                public void BasicTests()
+                public void FilterOutTheGeeseTest()
+                {
+                    Assert.AreEqual(new string[] { "Mallard", "Hook Bill", "Crested", "Blue Swedish" },
+                        FilterOutTheGeeseTask.GooseFilter(new string[] { "Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish" }));
+
+                    Assert.AreEqual(new string[] { "Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested" },
+                        FilterOutTheGeeseTask.GooseFilter(new string[] { "Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested" }));
+
+                    Assert.AreEqual(new string[] { },
+                        FilterOutTheGeeseTask.GooseFilter(new string[] { "African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher" }));
+                }
+
+                [Test]
+                public void PluralTest()
                 {
                     Assert.AreEqual(true, PluralTask.Plural(0), "Plural for 0");
                     Assert.AreEqual(true, PluralTask.Plural(0.5), "Plural for 0.5");

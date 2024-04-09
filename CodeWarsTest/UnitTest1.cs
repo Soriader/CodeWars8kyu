@@ -15,6 +15,15 @@ namespace CodeWarsTest
 
             class Test
             {
+                [Test]
+                public void BasicTests()
+                {
+                    Assert.AreEqual(true, PluralTask.Plural(0), "Plural for 0");
+                    Assert.AreEqual(true, PluralTask.Plural(0.5), "Plural for 0.5");
+                    Assert.AreEqual(false, PluralTask.Plural(1), "Plural for 1");
+                    Assert.AreEqual(true, PluralTask.Plural(100), "Plural for 100");
+                    Assert.AreEqual(true, PluralTask.Plural(double.PositiveInfinity), "Plural for Infinity");
+                }
 
                 [Test]
                 public void HolidayVIIIDutyFreeTest()

@@ -16,6 +16,23 @@ namespace CodeWarsTest
             class Test
             {
 
+                [Test]
+                public void SumOfDifferencesInArrayTest()
+                {
+                    Assert.AreEqual(0, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { }));
+                    Assert.AreEqual(0, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 0 }));
+                    Assert.AreEqual(0, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 1 }));
+                    Assert.AreEqual(0, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { -1 }));
+                    Assert.AreEqual(34, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { -17, 17 }));
+                    Assert.AreEqual(9, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 2, 1, 10 }));
+                    Assert.AreEqual(2, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { -3, -2, -1 }));
+                    Assert.AreEqual(0, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 1, 1, 1, 1, 1 }));
+                    Assert.AreEqual(0, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 0, 0, 0, 0, 0 }));
+                    Assert.AreEqual(4, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 1, 2, 3, 4, 5 }));
+                    Assert.AreEqual(29, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 0, 29, 24, 17 }));
+                    Assert.AreEqual(50, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { 25, 24, -25, 2 }));
+                    Assert.AreEqual(22, SumOfDifferencesInArrayTask.SumOfDifferences(new int[] { -26, -4, -8, -8 }));
+                }
 
                 [Test]
                 public void IsCubeTest()

@@ -16,6 +16,18 @@ namespace CodeWarsTest
             class Test
             {
 
+
+                [Test]
+                public void IsCubeTest()
+                {
+                    Assert.AreEqual(true, IsCubeTask.IsCube(1, 1));
+                    Assert.AreEqual(true, IsCubeTask.IsCube(8, 2));
+                    Assert.AreEqual(false, IsCubeTask.IsCube(2, 1));
+                    Assert.AreEqual(false, IsCubeTask.IsCube(6, 3));
+                    Assert.AreEqual(false, IsCubeTask.IsCube(-8, -2));
+                    Assert.AreEqual(false, IsCubeTask.IsCube(0, 0));
+                    Assert.AreEqual(false, IsCubeTask.IsCube(200, 4));
+                }
                 [Test]
                 public void FilterOutTheGeeseTest()
                 {

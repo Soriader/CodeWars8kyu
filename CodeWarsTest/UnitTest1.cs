@@ -12,8 +12,19 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
+
             class Test
             {
+
+                [Test]
+                public void HolidayVIIIDutyFreeTest()
+                {
+                    Assert.AreEqual(166, HolidayVIIIDutyFreeTask.DutyFree(12, 50, 1000));
+                    Assert.AreEqual(294, HolidayVIIIDutyFreeTask.DutyFree(17, 10, 500));
+                    Assert.AreEqual(357, HolidayVIIIDutyFreeTask.DutyFree(24, 35, 3000));
+                }
+
+
                 [Test]
                 public void TakeTheDerivativeTest()
                 {

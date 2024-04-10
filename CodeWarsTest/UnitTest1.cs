@@ -15,6 +15,12 @@ namespace CodeWarsTest
 
             class Test
             {
+                [Test]
+                public void SortAndStarTest()
+                {
+                    Assert.AreEqual("b***i***t***c***o***i***n", SortAndStarTask.TwoSort(new[] { "bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps" }));
+                    Assert.AreEqual("a***r***e", SortAndStarTask.TwoSort(new[] { "turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones" }));
+                }
 
                 [Test]
                 public void PriceOfMangoesTest()

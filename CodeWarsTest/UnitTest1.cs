@@ -15,6 +15,14 @@ namespace CodeWarsTest
 
             class Test
             {
+
+                [Test]
+                public void PriceOfMangoesTest()
+                {
+                    Assert.AreEqual(6, PriceOfMangoesTask.Mango(3, 3));
+                    Assert.AreEqual(30, PriceOfMangoesTask.Mango(9, 5));
+                }
+
                 [Test]
                 public void WelcomeToTheCityTest()
                 {

@@ -16,6 +16,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void WelcomeToTheCityTest()
+                {
+                    Assert.AreEqual("Hello, John Smith! Welcome to Phoenix, Arizona!", WelcomeToTheCityTask.SayHello(new string[] { "John", "Smith" }, "Phoenix", "Arizona"));
+                }
+
+                [Test]
                 public void RemoveFirstAndLastCharacterPartTwoTest()
                 {
                     Assert.AreEqual(null, RemoveFirstAndLastCharacterPartTwoTask.Array(""));

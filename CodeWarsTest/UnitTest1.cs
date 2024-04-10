@@ -15,6 +15,16 @@ namespace CodeWarsTest
 
             class Test
             {
+                [Test]
+                public void RemoveFirstAndLastCharacterPartTwoTest()
+                {
+                    Assert.AreEqual(null, RemoveFirstAndLastCharacterPartTwoTask.Array(""));
+                    Assert.AreEqual(null, RemoveFirstAndLastCharacterPartTwoTask.Array("1"));
+                    Assert.AreEqual(null, RemoveFirstAndLastCharacterPartTwoTask.Array("1, 3"));
+                    Assert.AreEqual("2", RemoveFirstAndLastCharacterPartTwoTask.Array("1,2,3"));
+                    Assert.AreEqual("2 3", RemoveFirstAndLastCharacterPartTwoTask.Array("1,2,3,4"));
+                }
+
 
                 [Test]
                 public void SumOfDifferencesInArrayTest()

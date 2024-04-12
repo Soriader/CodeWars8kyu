@@ -16,6 +16,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void HowOldWillIBeInTest()
+                {
+                    Assert.AreEqual("You are 17 years old.", HowOldWillIBeInTask.CalculateAge(2003, 2020));
+                    Assert.AreEqual("You are 1 year old.", HowOldWillIBeInTask.CalculateAge(2019, 2020));
+                    Assert.AreEqual("You were born this very year!", HowOldWillIBeInTask.CalculateAge(2003, 2003));
+                    Assert.AreEqual("You will be born in 17 years.", HowOldWillIBeInTask.CalculateAge(2020, 2003));
+                    Assert.AreEqual("You will be born in 1 year.", HowOldWillIBeInTask.CalculateAge(2020, 2019));
+                }
+
+                [Test]
                 public void SortAndStarTest()
                 {
                     Assert.AreEqual("b***i***t***c***o***i***n", SortAndStarTask.TwoSort(new[] { "bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps" }));

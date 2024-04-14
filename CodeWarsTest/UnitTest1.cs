@@ -16,6 +16,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void AppleTurnoverTest()
+                {
+                    Assert.AreEqual("It's hotter than the sun!!", AppleTurnoverTask.Apple("50"));
+                    Assert.AreEqual("Help yourself to a honeycomb Yorkie for the glovebox.", AppleTurnoverTask.Apple(4));
+                }
+
+                [Test]
                 public void HowOldWillIBeInTest()
                 {
                     Assert.AreEqual("You are 17 years old.", HowOldWillIBeInTask.CalculateAge(2003, 2020));

@@ -15,6 +15,13 @@ namespace CodeWarsTest
 
             class Test
             {
+                [Test]
+                public void NameShufflerTest()
+                {
+                    Assert.AreEqual("McClane john", NameShufflerTask.NameShuffler("john McClane"));
+                    Assert.AreEqual("jeggins Mary", NameShufflerTask.NameShuffler("Mary jeggins"));
+                    Assert.AreEqual("jerry tom", NameShufflerTask.NameShuffler("tom jerry"));
+                }
 
                 [Test]
                 public void PillarsTest()

@@ -15,6 +15,16 @@ namespace CodeWarsTest
 
             class Test
             {
+
+                [Test]
+                public void PillarsTest()
+                {
+                    Assert.AreEqual(2000, PillarsTask.Pillars(2, 20, 25));
+                    Assert.AreEqual(15270, PillarsTask.Pillars(11, 15, 30));
+                    Assert.AreEqual(0, PillarsTask.Pillars(1, 10, 10));
+                }
+
+
                 [Test]
                 public void AppleTurnoverTest()
                 {

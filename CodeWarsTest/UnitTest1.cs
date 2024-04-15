@@ -16,6 +16,19 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void BartenderDrinksTest()
+                {
+                    Assert.AreEqual("Patron Tequila", BartenderDrinksTask.GetDrinkByProfession("jabrOni"), "'Jabroni' should map to 'Patron Tequila'");
+                    Assert.AreEqual("Anything with Alcohol", BartenderDrinksTask.GetDrinkByProfession("scHOOl counselor"), "'School Counselor' should map to 'Anything with alcohol'");
+                    Assert.AreEqual("Hipster Craft Beer", BartenderDrinksTask.GetDrinkByProfession("prOgramMer"), "'Programmer' should map to 'Hipster Craft Beer'");
+                    Assert.AreEqual("Moonshine", BartenderDrinksTask.GetDrinkByProfession("bike ganG member"), "'Bike Gang Member' should map to 'Moonshine'");
+                    Assert.AreEqual("Your tax dollars", BartenderDrinksTask.GetDrinkByProfession("poLiTiCian"), "'Politician' should map to 'Your tax dollars'");
+                    Assert.AreEqual("Cristal", BartenderDrinksTask.GetDrinkByProfession("rapper"), "'Rapper' should map to 'Cristal'");
+                    Assert.AreEqual("Beer", BartenderDrinksTask.GetDrinkByProfession("pundit"), "'Pundit' should map to 'Beer'");
+                    Assert.AreEqual("Beer", BartenderDrinksTask.GetDrinkByProfession("Pug"), "'Pug' should map to 'Beer'");
+                }
+
+                [Test]
                 public void NameShufflerTest()
                 {
                     Assert.AreEqual("McClane john", NameShufflerTask.NameShuffler("john McClane"));

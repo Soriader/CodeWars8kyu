@@ -16,6 +16,18 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ALTerNAtiNGCaSeTest()
+                {
+                    Assert.AreEqual("HELLO WORLD", ALTerNAtiNGCaSeTask.ToAlternatingCase("hello world"));
+                    Assert.AreEqual("hello world", ALTerNAtiNGCaSeTask.ToAlternatingCase("HELLO WORLD"));
+                    Assert.AreEqual("HELLO world", ALTerNAtiNGCaSeTask.ToAlternatingCase("hello WORLD"));
+                    Assert.AreEqual("HELLO WORLD", ALTerNAtiNGCaSeTask.ToAlternatingCase("hello world"));
+                    Assert.AreEqual("12345", ALTerNAtiNGCaSeTask.ToAlternatingCase("12345"));
+                    Assert.AreEqual("1A2B3C4D5E", ALTerNAtiNGCaSeTask.ToAlternatingCase("1a2b3c4d5e"));
+                    
+                }
+
+                [Test]
                 public void BartenderDrinksTest()
                 {
                     Assert.AreEqual("Patron Tequila", BartenderDrinksTask.GetDrinkByProfession("jabrOni"), "'Jabroni' should map to 'Patron Tequila'");

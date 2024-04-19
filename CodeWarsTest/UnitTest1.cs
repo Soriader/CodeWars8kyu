@@ -12,9 +12,19 @@ namespace CodeWarsTest
         [TestFixture]
         public class KataTest
         {
-
             class Test
             {
+
+                [Test]
+                public void IfElseAndTernaryOperatorTest()
+                {
+                    Assert.AreEqual(100, IfElseAndTernaryOperatorTask.SaleHotDogs(1));
+                    Assert.AreEqual(400, IfElseAndTernaryOperatorTask.SaleHotDogs(4));
+                    Assert.AreEqual(475, IfElseAndTernaryOperatorTask.SaleHotDogs(5));
+                    Assert.AreEqual(855, IfElseAndTernaryOperatorTask.SaleHotDogs(9));
+                    Assert.AreEqual(900, IfElseAndTernaryOperatorTask.SaleHotDogs(10));
+                    Assert.AreEqual(9000, IfElseAndTernaryOperatorTask.SaleHotDogs(100));
+                }
                 [Test]
                 public void ALTerNAtiNGCaSeTest()
                 {

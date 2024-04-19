@@ -14,6 +14,16 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void ReverseListOrderTest()
+                {
+                    Assert.AreEqual(new List<int> { 1, 2, 3, 4 }, ReverseListOrderTask.ReverseList(new List<int> { 4, 3, 2, 1 }));
+                    Assert.AreEqual(new List<int> { 3, 1, 5, 4 }, ReverseListOrderTask.ReverseList(new List<int> { 4, 5, 1, 3 }));
+                    Assert.AreEqual(new List<int> { 3, 6, 9, 2 }, ReverseListOrderTask.ReverseList(new List<int> { 2, 9, 6, 3 }));
+
+                }
+
                 [Test]
                 public void FirstNonConsecutiveTest()
                 {

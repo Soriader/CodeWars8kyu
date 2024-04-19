@@ -14,6 +14,13 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void FirstNonConsecutiveTest()
+                {
+                    Assert.AreEqual(6, FirstNonConsecutiveTask.FirstNonConsecutive(new int[] { 1, 2, 3, 4, 6, 7, 8 }));
+                    Assert.AreEqual(null, FirstNonConsecutiveTask.FirstNonConsecutive(new int[] { 1, 2, 3, 4 }));
+
+                }
 
                 [Test]
                 public void IfElseAndTernaryOperatorTest()

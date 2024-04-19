@@ -14,6 +14,14 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void WhatIsTheRealFloorTest()
+                {
+                    Assert.AreEqual(0, WhatIsTheRealFloorTask.GetRealFloor(1));
+                    Assert.AreEqual(4, WhatIsTheRealFloorTask.GetRealFloor(5));
+                    Assert.AreEqual(13, WhatIsTheRealFloorTask.GetRealFloor(15));
+                    Assert.AreEqual(-5, WhatIsTheRealFloorTask.GetRealFloor(-5));
+                }
 
                 [Test]
                 public void ReverseListOrderTest()

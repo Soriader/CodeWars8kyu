@@ -15,6 +15,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void USDToCNYTest()
+                {
+                    Assert.AreEqual("101,25 Chinese Yuan", USDToCNYTask.Usdcny(15));
+                    Assert.AreEqual("3138,75 Chinese Yuan", USDToCNYTask.Usdcny(465));
+                }
+
+                [Test]
                 public void WhatIsTheRealFloorTest()
                 {
                     Assert.AreEqual(0, WhatIsTheRealFloorTask.GetRealFloor(1));

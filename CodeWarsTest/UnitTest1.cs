@@ -15,6 +15,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SquaringAnArgumentTest()
+                {
+                    Assert.AreEqual(4, SquaringAnArgumentTask.Square(2));
+                    Assert.AreEqual(100, SquaringAnArgumentTask.Square(10));
+                }
+                [Test]
                 public void USDToCNYTest()
                 {
                     Assert.AreEqual("101,25 Chinese Yuan", USDToCNYTask.Usdcny(15));

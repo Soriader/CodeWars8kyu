@@ -15,6 +15,19 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SimpleValidationOfAUsernameWithRegexTest()
+                {
+                    Assert.AreEqual(true, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("asddsa"));
+                    Assert.AreEqual(false, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("a"));
+                    Assert.AreEqual(false, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("Hasd_12ssssssssssssssasasasasasssasassss"));
+                    Assert.AreEqual(false, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("Haas"));
+                    Assert.AreEqual(false, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr(""));
+                    Assert.AreEqual(true, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("____"));
+                    Assert.AreEqual(false, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("asd43 34"));
+                    Assert.AreEqual(true, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("asd43_34"));
+                }
+
+                [Test]
                 public void GetCharacterFromASCIIValueTest()
                 {
                     Assert.AreEqual('7', GetCharacterFromASCIIValueTask.GetChar(55));

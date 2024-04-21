@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void RegexCountLowercaseLettersTest()
+                {
+                    Assert.AreEqual(3, RegexCountLowercaseLettersTask.LowercaseCountCheck("abc"));
+                    Assert.AreEqual(3, RegexCountLowercaseLettersTask.LowercaseCountCheck("abcABC123"));
+                    Assert.AreEqual(3, RegexCountLowercaseLettersTask.LowercaseCountCheck("abcABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~"));
+                    Assert.AreEqual(0, RegexCountLowercaseLettersTask.LowercaseCountCheck("ABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~"));
+                    Assert.AreEqual(26, RegexCountLowercaseLettersTask.LowercaseCountCheck("abcdefghijklmnopqrstuvwxyz"));
+                }
+
+                [Test]
                 public void SimpleValidationOfAUsernameWithRegexTest()
                 {
                     Assert.AreEqual(true, SimpleValidationOfAUsernameWithRegexTask.ValidateUsr("asddsa"));

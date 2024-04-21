@@ -15,6 +15,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void HowManyLightsabersDoYouOwnTest()
+                {
+                    Assert.AreEqual(18, HowManyLightsabersDoYouOwnTask.HowManyLightsabersDoYouOwn("Zach"));
+                    Assert.AreEqual(0, HowManyLightsabersDoYouOwnTask.HowManyLightsabersDoYouOwn("Adam"));
+                    Assert.AreEqual(0, HowManyLightsabersDoYouOwnTask.HowManyLightsabersDoYouOwn("John"));
+                }
+                [Test]
                 public void RegexCountLowercaseLettersTest()
                 {
                     Assert.AreEqual(3, RegexCountLowercaseLettersTask.LowercaseCountCheck("abc"));

@@ -15,6 +15,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void GetCharacterFromASCIIValueTest()
+                {
+                    Assert.AreEqual('7', GetCharacterFromASCIIValueTask.GetChar(55));
+                    Assert.AreEqual('8', GetCharacterFromASCIIValueTask.GetChar(56));
+                    Assert.AreEqual('A', GetCharacterFromASCIIValueTask.GetChar(65));
+                    Assert.AreEqual('@', GetCharacterFromASCIIValueTask.GetChar(64));
+                }
+
+                [Test]
                 public void SquaringAnArgumentTest()
                 {
                     Assert.AreEqual(4, SquaringAnArgumentTask.Square(2));

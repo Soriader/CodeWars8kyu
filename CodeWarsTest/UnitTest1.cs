@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void DefineACardSuitTest()
+                {
+                    Assert.AreEqual("clubs", DefineACardSuitTask.DefineSuit("3♣"));
+                    Assert.AreEqual("spades", DefineACardSuitTask.DefineSuit("Q♠"));
+                    Assert.AreEqual("diamonds", DefineACardSuitTask.DefineSuit("9♦"));
+                    Assert.AreEqual("hearts", DefineACardSuitTask.DefineSuit("J♥"));
+                }
+                [Test]
                 public void HexToDecTest()
                 {
                     Assert.AreEqual(1, HexToDecimalTask.HexToDec("1"));

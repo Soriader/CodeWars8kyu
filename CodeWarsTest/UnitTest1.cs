@@ -15,6 +15,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void IncludeTest()
+                {
+                    Assert.AreEqual(true, IncludeTask.Include(new int[] { 1, 2, 3, 4 }, 3));
+                    Assert.AreEqual(false, IncludeTask.Include(new int[] { 1, 2, 4, 5 }, 3));
+                }
+                [Test]
                 public void DefineACardSuitTest()
                 {
                     Assert.AreEqual("clubs", DefineACardSuitTask.DefineSuit("3♣"));

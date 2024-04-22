@@ -15,6 +15,19 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ReturnTheDayTest()
+                {
+                    Assert.AreEqual("Sunday", ReturnTheDayTask.WhatDay(1));
+                    Assert.AreEqual("Monday", ReturnTheDayTask.WhatDay(2));
+                    Assert.AreEqual("Tuesday", ReturnTheDayTask.WhatDay(3));
+                    Assert.AreEqual("Wednesday", ReturnTheDayTask.WhatDay(4));
+                    Assert.AreEqual("Thursday", ReturnTheDayTask.WhatDay(5));
+                    Assert.AreEqual("Friday", ReturnTheDayTask.WhatDay(6));
+                    Assert.AreEqual("Saturday", ReturnTheDayTask.WhatDay(7));
+                    Assert.AreEqual("Wrong, please enter a number between 1 and 7", ReturnTheDayTask.WhatDay(-7));
+                }
+
+                [Test]
                 public void DoYouSpeakEnglishTest()
                 {
                     Assert.AreEqual(false, DoYouSpeakEnglishTask.SpeakEnglish("hello world"));

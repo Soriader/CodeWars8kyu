@@ -15,6 +15,18 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void DoYouSpeakEnglishTest()
+                {
+                    Assert.AreEqual(false, DoYouSpeakEnglishTask.SpeakEnglish("hello world"));
+                    Assert.AreEqual(false, DoYouSpeakEnglishTask.SpeakEnglish("egnlish"));
+                    Assert.AreEqual(false, DoYouSpeakEnglishTask.SpeakEnglish(""));
+                    Assert.AreEqual(true, DoYouSpeakEnglishTask.SpeakEnglish("english"));
+                    Assert.AreEqual(true, DoYouSpeakEnglishTask.SpeakEnglish("eNgliSh"));
+                    Assert.AreEqual(true, DoYouSpeakEnglishTask.SpeakEnglish("1234#$%%eNglish ;k9"));
+
+                }
+
+                [Test]
                 public void FundamentalsReturnTest()
                 {
                     Assert.AreEqual(12, FundamentalsReturnTask.Add(5, 7));

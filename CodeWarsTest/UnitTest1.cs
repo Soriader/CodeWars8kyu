@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void HexToDecTest()
+                {
+                    Assert.AreEqual(1, HexToDecimalTask.HexToDec("1"));
+                    Assert.AreEqual(10, HexToDecimalTask.HexToDec("a"));
+                    Assert.AreEqual(16, HexToDecimalTask.HexToDec("10"));
+                    Assert.AreEqual(255, HexToDecimalTask.HexToDec("FF"));
+                    Assert.AreEqual(-12, HexToDecimalTask.HexToDec("-C"));
+                }
+
+                [Test]
                 public static void HowManyLightsabersDoYouOwnTest()
                 {
                     Assert.AreEqual(18, HowManyLightsabersDoYouOwnTask.HowManyLightsabersDoYouOwn("Zach"));

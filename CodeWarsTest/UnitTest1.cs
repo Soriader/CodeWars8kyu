@@ -15,6 +15,19 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FundamentalsReturnTest()
+                {
+                    Assert.AreEqual(12, FundamentalsReturnTask.Add(5, 7));
+                    Assert.AreEqual(10, FundamentalsReturnTask.Multiply(5, 2));
+                    Assert.AreEqual(5, FundamentalsReturnTask.Divide(10, 2));
+                    Assert.AreEqual(4, FundamentalsReturnTask.Exponent(2, 2));
+                    Assert.AreEqual(3, FundamentalsReturnTask.Subt(5, 2));
+                    Assert.AreEqual(0, FundamentalsReturnTask.Mod(2, 2));
+;
+                }
+
+
+                [Test]
                 public void IncludeTest()
                 {
                     Assert.AreEqual(true, IncludeTask.Include(new int[] { 1, 2, 3, 4 }, 3));

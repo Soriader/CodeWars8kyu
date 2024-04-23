@@ -15,6 +15,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void TakeTheFirstNElementsTest()
+                {
+                    Assert.AreEqual(new int[] { 0, 1, 2 }, TakeTheFirstNElementsTask.Take(new int[] { 0, 1, 2, 3, 5, 8, 13 }, 3));
+                    Assert.AreEqual(new int[] { }, TakeTheFirstNElementsTask.Take(new int[] { 0, 1, 2, 3, 5, 8, 13 }, 0));
+                    Assert.AreEqual(new int[] { }, TakeTheFirstNElementsTask.Take(new int[] { }, 3));
+                }
+                [Test]
                 public void SimpleCalculatorTest()
                 {
                     Assert.AreEqual(8, SimpleCalculatorTask.Calculator(6, 2, '+'));

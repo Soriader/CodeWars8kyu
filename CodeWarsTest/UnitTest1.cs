@@ -15,6 +15,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SimpleCalculatorTest()
+                {
+                    Assert.AreEqual(8, SimpleCalculatorTask.Calculator(6, 2, '+'));
+                    Assert.AreEqual(1, SimpleCalculatorTask.Calculator(4, 3, '-'));
+                    Assert.AreEqual(25, SimpleCalculatorTask.Calculator(5, 5, '*'));
+                    Assert.AreEqual(1.25, SimpleCalculatorTask.Calculator(5, 4, '/'));
+                    Assert.Throws<ArgumentException>(() => SimpleCalculatorTask.Calculator(6, 2, '&'));
+                }
+
+
+                [Test]
                 public void ReturnTheDayTest()
                 {
                     Assert.AreEqual("Sunday", ReturnTheDayTask.WhatDay(1));

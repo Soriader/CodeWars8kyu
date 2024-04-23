@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void TheIfFunctionTest()
+                {
+                    var a = false;
+
+                    TheIfFunctionTask.If(true, () => a = true, () => a = false);
+
+                    Assert.True(a, "func1 should be called");
+                }
+
+                [Test]
                 public void RemoveAllExclamationMarksFromTheEndTest()
                 {
                     Assert.AreEqual("Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("Hi!"));

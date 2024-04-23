@@ -15,6 +15,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void RemoveAllExclamationMarksFromTheEndTest()
+                {
+                    Assert.AreEqual("Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("Hi!"));
+                    Assert.AreEqual("Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("Hi!!!"));
+                    Assert.AreEqual("!Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("!Hi"));
+                    Assert.AreEqual("!Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("!Hi!"));
+                    Assert.AreEqual("Hi! Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("Hi! Hi"));
+                    Assert.AreEqual("Hi", RemoveAllExclamationMarksFromTheEndTask.Remove("Hi"));
+                }
+
+                [Test]
                 public void TakeTheFirstNElementsTest()
                 {
                     Assert.AreEqual(new int[] { 0, 1, 2 }, TakeTheFirstNElementsTask.Take(new int[] { 0, 1, 2, 3, 5, 8, 13 }, 3));

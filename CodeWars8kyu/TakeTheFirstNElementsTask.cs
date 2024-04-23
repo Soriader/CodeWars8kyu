@@ -14,14 +14,14 @@ namespace CodeWars8kyu
 
             for (int i = 0; i < arr.Length; i++)
             {
-                if(i <= n)
+                if(i < n)
                 {
                     result.Add(arr[i]);
 
-                    //if(i == n)
-                    //{
-                    //    result.Add(arr[i]);
-                    //}
+                    if(i == n)
+                    {
+                        result.Add(arr[i]);
+                    }
                 }
             }
 
@@ -29,3 +29,4 @@ namespace CodeWars8kyu
         }
     }
 }
+//https://www.codewars.com/kata/545afd0761aa4c3055001386/train/csharp

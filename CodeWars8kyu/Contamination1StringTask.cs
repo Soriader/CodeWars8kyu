@@ -10,8 +10,6 @@ namespace CodeWars8kyu
     {
         public static string Contamination(string text, string character)
         {
-            //List<string> result = new List<string>();
-
             string result = "";
 
             if(text == null || character == null)
@@ -19,13 +17,9 @@ namespace CodeWars8kyu
                 return "";
             } 
 
-            int iterator = 0;
-
             foreach (var item in text)
             {
-
                 result += character;
-
             }
 
             return result;
@@ -33,3 +27,4 @@ namespace CodeWars8kyu
         }
     }
 }
+//https://www.codewars.com/kata/596fba44963025c878000039/train/csharp

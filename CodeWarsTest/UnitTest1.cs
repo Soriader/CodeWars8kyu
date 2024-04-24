@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void Contamination1StringTest()
+                {
+                    Assert.AreEqual("zzz", Contamination1StringTask.Contamination("abc", "z"));
+                    Assert.AreEqual("", Contamination1StringTask.Contamination("", "z"));
+                    Assert.AreEqual("", Contamination1StringTask.Contamination("abc", String.Empty));
+                    Assert.AreEqual("&&&&&&&&", Contamination1StringTask.Contamination("_3ebzgh4", "&"));
+                    Assert.AreEqual("      ", Contamination1StringTask.Contamination("//case", " "));
+                }
+
+                [Test]
                 public void TheIfFunctionTest()
                 {
                     var a = false;

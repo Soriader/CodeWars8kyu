@@ -14,7 +14,23 @@ namespace CodeWarsTest
         {
             class Test
             {
-                [Test]
+				[Test]
+				public void ExclamationMarksSeriesSixTest()
+				{
+					Assert.AreEqual("Hi", ExclamationMarksSeriesSixTask.Remove("Hi!", 1));
+					Assert.AreEqual("Hi", ExclamationMarksSeriesSixTask.Remove("Hi!", 100));
+					Assert.AreEqual("Hi!!", ExclamationMarksSeriesSixTask.Remove("Hi!!!", 1));
+					Assert.AreEqual("Hi", ExclamationMarksSeriesSixTask.Remove("Hi!!!", 100));
+					Assert.AreEqual("Hi", ExclamationMarksSeriesSixTask.Remove("!Hi", 1));
+					Assert.AreEqual("Hi!", ExclamationMarksSeriesSixTask.Remove("!Hi!", 1));
+					Assert.AreEqual("Hi", ExclamationMarksSeriesSixTask.Remove("!Hi!", 100));
+					Assert.AreEqual("!!Hi !!hi!!! !hi", ExclamationMarksSeriesSixTask.Remove("!!!Hi !!hi!!! !hi", 1));
+					Assert.AreEqual("Hi !!hi!!! !hi", ExclamationMarksSeriesSixTask.Remove("!!!Hi !!hi!!! !hi", 3));
+					Assert.AreEqual("Hi hi!!! !hi", ExclamationMarksSeriesSixTask.Remove("!!!Hi !!hi!!! !hi", 5));
+					Assert.AreEqual("Hi hi hi", ExclamationMarksSeriesSixTask.Remove("!!!Hi !!hi!!! !hi", 100));
+				}
+
+				[Test]
                 public void Contamination1StringTest()
                 {
                     Assert.AreEqual("zzz", Contamination1StringTask.Contamination("abc", "z"));

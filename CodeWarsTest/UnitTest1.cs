@@ -15,6 +15,15 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public void SurfaceAreaAndVolumeOfABoxTest()
+				{
+					Assert.AreEqual(new[] { 88, 48 }, SurfaceAreaAndVolumeOfABoxTask.Get_size(4, 2, 6));
+					Assert.AreEqual(new[] { 6, 1 }, SurfaceAreaAndVolumeOfABoxTask.Get_size(1, 1, 1));
+					Assert.AreEqual(new[] { 10, 2 }, SurfaceAreaAndVolumeOfABoxTask.Get_size(1, 2, 1));
+					Assert.AreEqual(new[] { 16, 4 }, SurfaceAreaAndVolumeOfABoxTask.Get_size(1, 2, 2));
+					Assert.AreEqual(new[] { 600, 1000 }, SurfaceAreaAndVolumeOfABoxTask.Get_size(10, 10, 10));
+				}
+				[Test]
 				public void ExclamationMarksSeriesSixTest()
 				{
 					Assert.AreEqual("Hi", ExclamationMarksSeriesSixTask.Remove("Hi!", 1));

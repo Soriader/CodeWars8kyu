@@ -15,6 +15,17 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public void SumOfMultiplesTest()
+				{
+					Assert.AreEqual(20, SumOfMultiplesTask.SumMul(2, 9), "n = 2, m = 9");
+					Assert.AreEqual(30, SumOfMultiplesTask.SumMul(5, 20), "n = 5, m = 20");
+					Assert.AreEqual(1860, SumOfMultiplesTask.SumMul(4, 123), "n = 4, m = 123");
+					Assert.AreEqual(86469, SumOfMultiplesTask.SumMul(123, 4567), "n = 123, m = 4567");
+					Assert.Throws<ArgumentException>(() => SumOfMultiplesTask.SumMul(4, 1), "n = 4, m = 1");
+					Assert.Throws<ArgumentException>(() => SumOfMultiplesTask.SumMul(0, 20), "n = 0, m = 20");
+				}
+
+				[Test]
 				public void SurfaceAreaAndVolumeOfABoxTest()
 				{
 					Assert.AreEqual(new[] { 88, 48 }, SurfaceAreaAndVolumeOfABoxTask.Get_size(4, 2, 6));

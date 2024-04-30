@@ -15,6 +15,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ExclamationMarksSeries4Test()
+                {
+                    Assert.AreEqual("Hi!", ExclamationMarksSeries4Task.Remove("Hi!"));
+                    Assert.AreEqual("Hi!", ExclamationMarksSeries4Task.Remove("Hi!!!"));
+                    Assert.AreEqual("Hi!", ExclamationMarksSeries4Task.Remove("!Hi"));
+                    Assert.AreEqual("Hi!", ExclamationMarksSeries4Task.Remove("!Hi!"));
+                    Assert.AreEqual("Hi Hi!", ExclamationMarksSeries4Task.Remove("Hi! Hi!"));
+                    Assert.AreEqual("Hi!", ExclamationMarksSeries4Task.Remove("Hi"));
+                }
+
+                [Test]
                 public void IsThereAVowelInThereTest()
                 {
                     Assert.AreEqual(new object[] { 118, "u", 120, 121, "u", 98, 122, "a", 120, 106, 104, 116, 113, 114, 113, 120, 106 }, IsThereAVowelInThereTask.IsVow(new object[] { 118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113, 120, 106 }));

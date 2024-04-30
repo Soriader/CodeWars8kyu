@@ -15,6 +15,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void TipCalculatorTest()
+                {
+                    Assert.AreEqual(4, TipCalculatorTask.CalculateTip(20, "Excellent"));
+                    Assert.AreEqual(3, TipCalculatorTask.CalculateTip(26.95, "good"));
+                }
+                [Test]
                 public void ExclamationMarksSeries4Test()
                 {
                     Assert.AreEqual("Hi!", ExclamationMarksSeries4Task.Remove("Hi!"));

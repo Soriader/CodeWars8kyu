@@ -15,6 +15,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void RegexpBasicsIsItADigitTest()
+                {
+                    Assert.AreEqual(false, RegexpBasicsIsItADigitTask.Digit(""));
+                    Assert.AreEqual(true, RegexpBasicsIsItADigitTask.Digit("7"));
+                    Assert.AreEqual(false, RegexpBasicsIsItADigitTask.Digit(" "));
+                    Assert.AreEqual(false, RegexpBasicsIsItADigitTask.Digit("a"));
+                    Assert.AreEqual(false, RegexpBasicsIsItADigitTask.Digit("a5"));
+                    Assert.AreEqual(false, RegexpBasicsIsItADigitTask.Digit("14"));
+                }
+
+                [Test]
                 public void TipCalculatorTest()
                 {
                     Assert.AreEqual(4, TipCalculatorTask.CalculateTip(20, "Excellent"));

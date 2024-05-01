@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void GetNumberFromStringTest()
+                {
+                    Assert.AreEqual(1, GetNumberFromStringTask.GetNumberFromString("1"));
+                    Assert.AreEqual(123, GetNumberFromStringTask.GetNumberFromString("123"));
+                    Assert.AreEqual(7, GetNumberFromStringTask.GetNumberFromString("this is number: 7"));
+                }
+
+                [Test]
                 public void RegexpBasicsIsItADigitTest()
                 {
                     Assert.AreEqual(false, RegexpBasicsIsItADigitTask.Digit(""));

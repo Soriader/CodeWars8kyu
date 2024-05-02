@@ -15,6 +15,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FindNearestSquareNumberTest()
+                {
+                    Assert.That(FindNearestSquareNumberTask.NearestSq(2), Is.EqualTo(1));
+                    Assert.That(FindNearestSquareNumberTask.NearestSq(10), Is.EqualTo(9));
+                    Assert.That(FindNearestSquareNumberTask.NearestSq(111), Is.EqualTo(121));
+                    Assert.That(FindNearestSquareNumberTask.NearestSq(9999), Is.EqualTo(10000));
+                }
+
+                [Test]
                 public void LeonardDicaprioAndOscarsTest()
                 {
                     Assert.AreEqual("Leo finally won the oscar! Leo is happy", LeonardDicaprioAndOscarsTask.Leo(88));

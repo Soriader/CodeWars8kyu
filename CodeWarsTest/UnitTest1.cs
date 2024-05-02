@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void LeonardDicaprioAndOscarsTest()
+                {
+                    Assert.AreEqual("Leo finally won the oscar! Leo is happy", LeonardDicaprioAndOscarsTask.Leo(88));
+                    Assert.AreEqual("Leo got one already!", LeonardDicaprioAndOscarsTask.Leo(90));
+                    Assert.AreEqual("Not even for Wolf of wallstreet?!", LeonardDicaprioAndOscarsTask.Leo(86));
+                    Assert.AreEqual("When will you give Leo an Oscar?", LeonardDicaprioAndOscarsTask.Leo(78));
+
+                }
+
+                [Test]
                 public void GetNumberFromStringTest()
                 {
                     Assert.AreEqual(1, GetNumberFromStringTask.GetNumberFromString("1"));

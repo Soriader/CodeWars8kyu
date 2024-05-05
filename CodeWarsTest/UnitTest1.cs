@@ -15,6 +15,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void NoZerosForHerosTest()
+                {
+                    Assert.AreEqual(145, NoZerosForHerosTask.NoBoringZeros(1450));
+                    Assert.AreEqual(96, NoZerosForHerosTask.NoBoringZeros(960000));
+                    Assert.AreEqual(105, NoZerosForHerosTask.NoBoringZeros(1050));
+                    Assert.AreEqual(-105, NoZerosForHerosTask.NoBoringZeros(-1050));
+                    Assert.AreEqual(-255, NoZerosForHerosTask.NoBoringZeros(-2550000));
+
+                }
+
+                [Test]
                 public void FindNearestSquareNumberTest()
                 {
                     Assert.That(FindNearestSquareNumberTask.NearestSq(2), Is.EqualTo(1));

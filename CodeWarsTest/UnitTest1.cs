@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FindTheRemainderTest()
+                {
+                    Assert.AreEqual(2, FindTheRemainderTask.Remainder(17, 5));
+                    Assert.Throws<DivideByZeroException>(() => FindTheRemainderTask.Remainder(0, 1));
+                    Assert.Throws<DivideByZeroException>(() => FindTheRemainderTask.Remainder(0, 0));
+                }
+
+                [Test]
                 public static void NoZerosForHerosTest()
                 {
                     Assert.AreEqual(145, NoZerosForHerosTask.NoBoringZeros(1450));

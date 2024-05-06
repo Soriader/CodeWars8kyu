@@ -15,6 +15,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void GrasshopperCombineStringsTest()
+                {
+                    Assert.AreEqual("James Stevens", GrasshopperCombineStringsTask.CombineNames("James", "Stevens"));
+                }
+
+                [Test]
                 public void TemplateStringsTest()
                 {
                     Assert.AreEqual("Animals are Good", TemplateStringsTask.TempleStrings("Animals", "Good"));

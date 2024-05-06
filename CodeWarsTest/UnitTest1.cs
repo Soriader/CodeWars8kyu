@@ -15,6 +15,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void SleighAuthenticationTest()
+                {
+                    Assert.That(SleighAuthenticationTask.Authenticate("Santa Claus", "Ho Ho Ho!"));
+                    Assert.That(!SleighAuthenticationTask.Authenticate("Santa", "Ho Ho Ho!"));
+                    Assert.That(!SleighAuthenticationTask.Authenticate("Santa Claus", "Ho Ho!"));
+                    Assert.That(!SleighAuthenticationTask.Authenticate("jhoffner", "CodeWars"));
+                }
+
+
+                [Test]
                 public void GrasshopperCombineStringsTest()
                 {
                     Assert.AreEqual("James Stevens", GrasshopperCombineStringsTask.CombineNames("James", "Stevens"));

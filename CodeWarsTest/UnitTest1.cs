@@ -15,6 +15,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void TemplateStringsTest()
+                {
+                    Assert.AreEqual("Animals are Good", TemplateStringsTask.TempleStrings("Animals", "Good"));
+                }
+
+                [Test]
                 public void FindTheRemainderTest()
                 {
                     Assert.AreEqual(2, FindTheRemainderTask.Remainder(17, 5));

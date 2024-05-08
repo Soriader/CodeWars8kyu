@@ -14,6 +14,14 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void UEFAEUROTest()
+                {
+                    Assert.AreEqual("At match Germany - Ukraine, Germany won!", UEFAEUROTask.UefaEuro2016(new[] { "Germany", "Ukraine" }, new[] { 2, 0 }));
+                    Assert.AreEqual("At match Belgium - Italy, Italy won!", UEFAEUROTask.UefaEuro2016(new[] { "Belgium", "Italy" }, new[] { 0, 2 }));
+                    Assert.AreEqual("At match Portugal - Iceland, teams played draw.", UEFAEUROTask.UefaEuro2016(new[] { "Portugal", "Iceland" }, new[] { 1, 1 }));
+                }
+
                 [Test, Sequential]
                 public void IsDigitOrNoTest()
                 {

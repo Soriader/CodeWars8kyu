@@ -14,6 +14,15 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test, Sequential]
+                public void IsDigitOrNoTest()
+                {
+                    Assert.AreEqual(true, IsDigitOrNoTask.IsDigit("3"));
+                    Assert.AreEqual(true, IsDigitOrNoTask.IsDigit("-3.23"));
+                    Assert.AreEqual(false, IsDigitOrNoTask.IsDigit("3 5"));
+                    Assert.AreEqual(false, IsDigitOrNoTask.IsDigit("zero"));
+                }
+
                 [Test]
                 public void SleighAuthenticationTest()
                 {

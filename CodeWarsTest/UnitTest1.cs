@@ -15,6 +15,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ReplaceAllVowelToExclamationMarkTest()
+                {
+                    Assert.AreEqual("H!!", ReplaceAllVowelToExclamationMarkTask.Replace("Hi!"));
+                    Assert.AreEqual("!H!! H!!", ReplaceAllVowelToExclamationMarkTask.Replace("!Hi! Hi!"));
+                    Assert.AreEqual("!!!!!", ReplaceAllVowelToExclamationMarkTask.Replace("aeiou"));
+                    Assert.AreEqual("!BCD!", ReplaceAllVowelToExclamationMarkTask.Replace("ABCDE"));
+                }
+
+                [Test]
                 public void UEFAEUROTest()
                 {
                     Assert.AreEqual("At match Germany - Ukraine, Germany won!", UEFAEUROTask.UefaEuro2016(new[] { "Germany", "Ukraine" }, new[] { 2, 0 }));

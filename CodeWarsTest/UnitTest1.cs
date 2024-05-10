@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void OppositeNumberTest()
+                {
+                    Assert.AreEqual(-1, OppositeNumberTask.Opposite(1));
+                    Assert.AreEqual(5, OppositeNumberTask.Opposite(-5));
+                }
+
+
+                [Test]
                 public void ReplaceAllVowelToExclamationMarkTest()
                 {
                     Assert.AreEqual("H!!", ReplaceAllVowelToExclamationMarkTask.Replace("Hi!"));

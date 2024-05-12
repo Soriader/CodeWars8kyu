@@ -14,6 +14,16 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test, Description("Basic Tests")]
+                public void MultiplyTheNumberFiveTest()
+                {
+                    Assert.AreEqual(250, MultiplyTheNumberFiveTask.Multiply(10));
+                    Assert.AreEqual(25, MultiplyTheNumberFiveTask.Multiply(5));
+                    Assert.AreEqual(25000, MultiplyTheNumberFiveTask.Multiply(200));
+                    Assert.AreEqual(0, MultiplyTheNumberFiveTask.Multiply(0));
+                    Assert.AreEqual(-10, MultiplyTheNumberFiveTask.Multiply(-2));
+                }
+
                 [Test]
                 public void OppositeNumberTest()
                 {

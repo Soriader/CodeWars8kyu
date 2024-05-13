@@ -14,7 +14,13 @@ namespace CodeWarsTest
         {
             class Test
             {
-                [Test, Description("Basic Tests")]
+                [Test]
+                public void ParseFloatTest()
+                {
+                    Assert.AreEqual(1.0d, ParseFloatTask.ParseF("1"));
+                }
+
+                [Test]
                 public void MultiplyTheNumberFiveTest()
                 {
                     Assert.AreEqual(250, MultiplyTheNumberFiveTask.Multiply(10));

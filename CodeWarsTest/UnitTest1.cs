@@ -15,6 +15,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ObjectOrientedPiracyTest()
+                {
+                    Assert.AreEqual(false, new ObjectOrientedPiracyTask(15, 10).IsWorthIt());
+                    Assert.AreEqual(false, new ObjectOrientedPiracyTask(15, 20).IsWorthIt());
+                    Assert.AreEqual(true, new ObjectOrientedPiracyTask(100, 20).IsWorthIt());
+                    Assert.AreEqual(false, new ObjectOrientedPiracyTask(35, 20).IsWorthIt());
+                }
+
+                [Test]
                 public void ParseFloatTest()
                 {
                     Assert.AreEqual(1.0d, ParseFloatTask.ParseF("1"));

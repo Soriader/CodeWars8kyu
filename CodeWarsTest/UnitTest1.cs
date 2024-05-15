@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void NumberDrillsBlueAndRedMarblesTest()
+                {
+                    Assert.AreEqual(0.6d, NumberDrillsBlueAndRedMarblesTask.GuessBlue(5, 5, 2, 3), 1e-10);
+                    Assert.AreEqual(0.2d, NumberDrillsBlueAndRedMarblesTask.GuessBlue(5, 7, 4, 3), 1e-10);
+                    Assert.AreEqual(0.4d, NumberDrillsBlueAndRedMarblesTask.GuessBlue(12, 18, 4, 6), 1e-10);
+                }
+
+                [Test]
                 public void PrintingArrayElementsWithCommaDelimitersTest()
                 {
 

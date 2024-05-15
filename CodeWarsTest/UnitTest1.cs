@@ -15,6 +15,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void PrintingArrayElementsWithCommaDelimitersTest()
+                {
+
+                    Assert.AreEqual("2,4,5,2", PrintingArrayElementsWithCommaDelimitersTask.PrintArray(new object[] { 2, 4, 5, 2 }));
+                    Assert.AreEqual("38,57,69,63,43,24,32", PrintingArrayElementsWithCommaDelimitersTask.PrintArray(new object[] { 38, 57, 69, 63, 43, 24, 32 }));
+                    Assert.AreEqual("2", PrintingArrayElementsWithCommaDelimitersTask.PrintArray(new object[] { 2 }));
+                }
+
+                [Test]
                 public void ObjectOrientedPiracyTest()
                 {
                     Assert.AreEqual(false, new ObjectOrientedPiracyTask(15, 10).IsWorthIt());

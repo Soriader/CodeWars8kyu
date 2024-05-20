@@ -15,6 +15,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void GetASCIITest()
+                {
+                    Assert.That(GetASCIITask.GetASCII('A'), Is.EqualTo(65));
+                    Assert.That(GetASCIITask.GetASCII(' '), Is.EqualTo(32));
+                    Assert.That(GetASCIITask.GetASCII('!'), Is.EqualTo(33));
+                }
+                [Test]
                 public void NumberDrillsBlueAndRedMarblesTest()
                 {
                     Assert.AreEqual(0.6d, NumberDrillsBlueAndRedMarblesTask.GuessBlue(5, 5, 2, 3), 1e-10);

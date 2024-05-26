@@ -15,6 +15,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void ExampleTwistTest()
+                {
+                    Assert.AreEqual(ExampleTwistTask.Websites.Length, 1000);
+                    Assert.AreEqual(ExampleTwistTask.Websites.GetType().GetElementType(), typeof(System.String));
+                    Assert.That(Array.TrueForAll(ExampleTwistTask.Websites, (v) => v == "codewars"));
+                }
+
+                [Test]
                 public void GetASCIITest()
                 {
                     Assert.That(GetASCIITask.GetASCII('A'), Is.EqualTo(65));

@@ -14,6 +14,18 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void TerminalGameTask()
+                {
+                    Hero myHero = new Hero();
+                    Assert.AreEqual("Hero", myHero.Name);
+
+                    Hero myHero2 = new Hero();
+                    Assert.That(myHero2.Health is float);
+                }
+
+
                 [Test]
                 public static void ExampleTwistTest()
                 {

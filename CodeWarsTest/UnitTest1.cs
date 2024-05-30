@@ -14,6 +14,18 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void CompareWithinMarginTest()
+                {
+                    Assert.AreEqual(-1, CompareWithinMarginTask.CloseCompare(4, 5));
+                    Assert.AreEqual(0, CompareWithinMarginTask.CloseCompare(5, 5));
+                    Assert.AreEqual(1, CompareWithinMarginTask.CloseCompare(6, 5));
+                    Assert.AreEqual(-1, CompareWithinMarginTask.CloseCompare(-6, -5));
+
+                    Assert.AreEqual(0, CompareWithinMarginTask.CloseCompare(2, 5, 3));
+                    Assert.AreEqual(1, CompareWithinMarginTask.CloseCompare(8.1, 5, 3));
+                    Assert.AreEqual(-1, CompareWithinMarginTask.CloseCompare(1.99, 5, 3));
+                }
 
                 [Test]
                 public void HowManyStairsWillSuzukiClimbTest()

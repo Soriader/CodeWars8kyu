@@ -15,6 +15,29 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void MergeTwoSortedArraysIntoOneTest()
+                {
+                    Assert.AreEqual(new[] { 1, 2, 3, 4, 5, 6, 7, 8 },
+                                    MergeTwoSortedArraysIntoOneTask.MergeArrays(new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }));
+
+                    Assert.AreEqual(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+                                    MergeTwoSortedArraysIntoOneTask.MergeArrays(new[] { 1, 3, 5, 7, 9 }, new[] { 10, 8, 6, 4, 2 }));
+
+                    Assert.AreEqual(new[] { 1, 2, 3, 4, 5, 7, 9, 10, 11, 12 },
+                                    MergeTwoSortedArraysIntoOneTask.MergeArrays(new[] { 1, 3, 5, 7, 9, 11, 12 }, new[] { 1, 2, 3, 4, 5, 10, 12 }));
+
+                    Assert.AreEqual(new int[] { }, MergeTwoSortedArraysIntoOneTask.MergeArrays(new int[] { }, new int[] { }));
+
+                    Assert.AreEqual(new[] { 1, 2, 3 }, MergeTwoSortedArraysIntoOneTask.MergeArrays(new[] { 1, 2, 3 }, new int[] { }));
+
+                    Assert.AreEqual(new int[] { 1, 2, 3, 4, 5 },
+                                    MergeTwoSortedArraysIntoOneTask.MergeArrays(new int[] { }, new int[] { 1, 2, 3, 4, 5 }));
+
+                    Assert.AreEqual(new int[] { -3, -2, -1, 0, 1, 2, 3, 4 },
+                                    MergeTwoSortedArraysIntoOneTask.MergeArrays(new[] { -3, -2, -1, 0 }, new int[] { 1, 2, 3, 4 }));
+                }
+
+                [Test]
                 public void CompareWithinMarginTest()
                 {
                     Assert.AreEqual(-1, CompareWithinMarginTask.CloseCompare(4, 5));

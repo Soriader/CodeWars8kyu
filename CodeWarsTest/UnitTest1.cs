@@ -15,6 +15,14 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void ForUFCFansConorVsPierreTest()
+                {
+                    Assert.AreEqual("I am not impressed by your performance.", ForUFCFansConorVsPierreTask.Quote("george saint pierre"));
+                    Assert.AreEqual("I'd like to take this chance to apologize.. To absolutely NOBODY!", ForUFCFansConorVsPierreTask.Quote("conor mcgregor"));
+                    Assert.AreEqual("I am not impressed by your performance.", ForUFCFansConorVsPierreTask.Quote("George Saint Pierre"));
+                    Assert.AreEqual("I'd like to take this chance to apologize.. To absolutely NOBODY!", ForUFCFansConorVsPierreTask.Quote("Conor McGregor"));
+                }
 
                 [Test]
                 public void FormattingDecimalPlacesTest()

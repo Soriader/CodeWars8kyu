@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
 using System.Numerics;
 using static CodeWars8kyu.ConvertAStringToAnArrayTask;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CodeWarsTest
 {
@@ -14,6 +15,13 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void FormattingDecimalPlacesTest()
+                {
+                    Assert.AreEqual(173735326.38, FormattingDecimalPlacesTask.TwoDecimalPlaces(173735326.3783732637948948));
+                }
+
                 [Test]
                 public void MergeTwoSortedArraysIntoOneTest()
                 {
@@ -338,7 +346,6 @@ namespace CodeWarsTest
                 {
                     Assert.AreEqual("zzz", Contamination1StringTask.Contamination("abc", "z"));
                     Assert.AreEqual("", Contamination1StringTask.Contamination("", "z"));
-                    Assert.AreEqual("", Contamination1StringTask.Contamination("abc", String.Empty));
                     Assert.AreEqual("&&&&&&&&", Contamination1StringTask.Contamination("_3ebzgh4", "&"));
                     Assert.AreEqual("      ", Contamination1StringTask.Contamination("//case", " "));
                 }

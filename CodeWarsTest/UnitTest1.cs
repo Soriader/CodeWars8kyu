@@ -15,6 +15,13 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void FuelCalculatorTotalCostTest()
+                {
+                    Assert.AreEqual(5.65, FuelCalculatorTotalCostTask.FuelPrice(5, 1.23));
+                    Assert.AreEqual(18.40, FuelCalculatorTotalCostTask.FuelPrice(8, 2.5));
+                    Assert.AreEqual(27.50, FuelCalculatorTotalCostTask.FuelPrice(5, 5.6));
+                }
 
                 [Test]
                 public void ASCIITotalSumTest()

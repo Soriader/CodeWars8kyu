@@ -15,6 +15,15 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void ASCIITotalSumTest()
+                {
+                    Assert.AreEqual(97, ASCIITotalSumTask.UniTotal("a"));
+                    Assert.AreEqual(101, ASCIITotalSumTask.UniTotal("e"));
+                    Assert.AreEqual(1873, ASCIITotalSumTask.UniTotal("Mary Had A Little Lamb"));
+                }
+
                 [Test]
                 public void ForUFCFansConorVsPierreTest()
                 {

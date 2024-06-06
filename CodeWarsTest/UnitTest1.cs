@@ -16,6 +16,16 @@ namespace CodeWarsTest
             {
 
                 [Test]
+                public void BinToDecimalTest()
+                {
+                    Assert.AreEqual(0, BinToDecimalTask.BinToDec("0"));
+                    Assert.AreEqual(1, BinToDecimalTask.BinToDec("1"));
+                    Assert.AreEqual(2, BinToDecimalTask.BinToDec("10"));
+                    Assert.AreEqual(3, BinToDecimalTask.BinToDec("11"));
+                    Assert.AreEqual(6, BinToDecimalTask.BinToDec("110"));
+                }
+
+                [Test]
                 public void IsYourPeriodLateTest()
                 {
                     Assert.AreEqual(false, IsYourPeriodLateTask.PeriodIsLate(new DateTime(2016, 06, 13), new DateTime(2016, 07, 16), 35));

@@ -15,6 +15,12 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void AreArrowFunctionsOddTest()
+                {
+                    Assert.AreEqual(new List<int> { 1, 3, 5 }, AreArrowFunctionsOddTask.Odds(new List<int> { 1, 2, 3, 4, 5, 6 }));
+                   
+                }
 
                 [Test]
                 public void BinToDecimalTest()

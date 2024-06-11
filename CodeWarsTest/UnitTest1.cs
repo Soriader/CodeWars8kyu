@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
 using System.Numerics;
+using System.Runtime.InteropServices.JavaScript;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CodeWarsTest

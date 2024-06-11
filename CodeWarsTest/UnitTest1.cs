@@ -16,6 +16,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ClassyClassesTask()
+                {
+                    Person john = new Person("john", 34);
+                    Assert.AreEqual("johns age is 34", Person.Create("john", 34));
+                }
+
+                [Test]
                 public void AreArrowFunctionsOddTest()
                 {
                     Assert.AreEqual(new List<int> { 1, 3, 5 }, AreArrowFunctionsOddTask.Odds(new List<int> { 1, 2, 3, 4, 5, 6 }));

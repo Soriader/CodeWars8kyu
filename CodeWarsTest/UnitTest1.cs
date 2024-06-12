@@ -15,6 +15,28 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void CheckSameCaseTest()
+                {
+                    Assert.AreEqual(1, CheckSameCaseTask.SameCase('a', 'u'));
+                    Assert.AreEqual(1, CheckSameCaseTask.SameCase('A', 'U'));
+                    Assert.AreEqual(1, CheckSameCaseTask.SameCase('Q', 'P'));
+                    Assert.AreEqual(1, CheckSameCaseTask.SameCase('w', 'y'));
+                    Assert.AreEqual(1, CheckSameCaseTask.SameCase('c', 'm'));
+                    Assert.AreEqual(1, CheckSameCaseTask.SameCase('N', 'W'));
+                    Assert.AreEqual(0, CheckSameCaseTask.SameCase('a', 'U'));
+                    Assert.AreEqual(0, CheckSameCaseTask.SameCase('A', 'u'));
+                    Assert.AreEqual(0, CheckSameCaseTask.SameCase('Q', 'p'));
+                    Assert.AreEqual(0, CheckSameCaseTask.SameCase('w', 'Y'));
+                    Assert.AreEqual(0, CheckSameCaseTask.SameCase('c', 'M'));
+                    Assert.AreEqual(0, CheckSameCaseTask.SameCase('N', 'w')); 
+                    Assert.AreEqual(-1, CheckSameCaseTask.SameCase('a', '*'));
+                    Assert.AreEqual(-1, CheckSameCaseTask.SameCase('A', '%'));
+                    Assert.AreEqual(-1, CheckSameCaseTask.SameCase('Q', '1'));
+                    Assert.AreEqual(-1, CheckSameCaseTask.SameCase('w', '-'));
+                    Assert.AreEqual(-1, CheckSameCaseTask.SameCase('c', '8'));
+                    Assert.AreEqual(-1, CheckSameCaseTask.SameCase('N', ':'));
+                }
 
                 [Test]
                 public void LogicalCalculatorTest()

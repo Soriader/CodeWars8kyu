@@ -15,6 +15,33 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void LogicalCalculatorTest()
+                {
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true, true, false }, "AND"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true, true, false }, "OR"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true, true, false }, "XOR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true, false, false }, "AND"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true, false, false }, "OR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true, false, false }, "XOR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { true, false, false, false }, "AND"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, false, false, false }, "OR"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, false, false, false }, "XOR"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true }, "AND"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true }, "OR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { true, true }, "XOR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { false, false }, "AND"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { false, false }, "OR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { false, false }, "XOR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { false }, "AND"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { false }, "OR"));
+                    Assert.AreEqual(false, LogicalCalculatorTask.LogicalCalc(new bool[] { false }, "XOR"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true }, "AND"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true }, "OR"));
+                    Assert.AreEqual(true, LogicalCalculatorTask.LogicalCalc(new bool[] { true }, "XOR"));
+                }
+
                 [Test]
                 public void ClassyClassesTask()
                 {

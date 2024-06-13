@@ -16,6 +16,21 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void DidSheSayHalloTest()
+                {
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("hello"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("ciao bella!"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("salut"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("hallo, salut"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("hombre! Hola!"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("Hallo, wie geht\'s dir?"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("AHOJ!"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("czesc"));
+                    Assert.IsTrue(DidSheSayHalloTask.Validate_hello("Ahoj"));
+                    Assert.IsFalse(DidSheSayHalloTask.Validate_hello("meh"));
+                }
+
+                [Test]
                 public void ReturnTwoHighestValuesInListTest()
                 {
                     Assert.AreEqual(Array.Empty<int>(), ReturnTwoHighestValuesInListTask.TwoHighest(Array.Empty<int>()));

@@ -16,6 +16,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ValidateCodeWithSimpleRegexTest()
+                {
+                    Assert.AreEqual(true, ValidateCodeWithSimpleRegexTask.ValidateCode("123"));
+                    Assert.AreEqual(true, ValidateCodeWithSimpleRegexTask.ValidateCode("248"));
+                    Assert.AreEqual(false, ValidateCodeWithSimpleRegexTask.ValidateCode("8"));
+                    Assert.AreEqual(false, ValidateCodeWithSimpleRegexTask.ValidateCode("9453"));
+                    Assert.AreEqual(false, ValidateCodeWithSimpleRegexTask.ValidateCode(""));
+                    Assert.AreEqual(false, ValidateCodeWithSimpleRegexTask.ValidateCode("0"));
+                }
+
+                [Test]
                 public void CheckSameCaseTest()
                 {
                     Assert.AreEqual(1, CheckSameCaseTask.SameCase('a', 'u'));

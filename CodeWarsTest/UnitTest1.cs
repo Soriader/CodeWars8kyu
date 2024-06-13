@@ -16,6 +16,21 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ReturnTwoHighestValuesInListTest()
+                {
+                    Assert.AreEqual(Array.Empty<int>(), ReturnTwoHighestValuesInListTask.TwoHighest(Array.Empty<int>()));
+                    Assert.AreEqual(new[] { 15 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 15 }));
+                    Assert.AreEqual(new[] { 20, 17 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 15, 20, 20, 17 }));
+                    Assert.AreEqual(new[] { 10, 9 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 4, 10, 10, 9 }));
+                    Assert.AreEqual(new[] { 1 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 1, 1, 1 }));
+                    Assert.AreEqual(new[] { 5, 4 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 4, 1, 2, 3, 5 }));
+                    Assert.AreEqual(new[] { 3, 2 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 1, 1, 2, 2, 3, 3 }));
+                    Assert.AreEqual(new[] { 9, 6 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 0, 3, 0, 6, 0, 9 }));
+                    Assert.AreEqual(new[] { 0 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 0, 0, 0 }));
+                    Assert.AreEqual(new[] { 9, 0 }, ReturnTwoHighestValuesInListTask.TwoHighest(new[] { 0, 9, 0 }));
+                }
+
+                [Test]
                 public void ValidateCodeWithSimpleRegexTest()
                 {
                     Assert.AreEqual(true, ValidateCodeWithSimpleRegexTask.ValidateCode("123"));

@@ -16,6 +16,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void QuadrantsTest()
+                {
+                    Assert.AreEqual(1, QuadrantsTask.Quadrant(1, 2));
+                    Assert.AreEqual(2, QuadrantsTask.Quadrant(-10, 100));
+                    Assert.AreEqual(3, QuadrantsTask.Quadrant(-1, -9));
+                    Assert.AreEqual(3, QuadrantsTask.Quadrant(-60, -12));
+                    Assert.AreEqual(4, QuadrantsTask.Quadrant(19, -56));
+
+                }
+
+                [Test]
                 public void DidSheSayHalloTest()
                 {
                     Assert.IsTrue(DidSheSayHalloTask.Validate_hello("hello"));

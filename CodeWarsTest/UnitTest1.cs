@@ -15,6 +15,16 @@ namespace CodeWarsTest
         {
             class Test
             {
+
+                [Test]
+                public void PickASetOfFirstElementsTest()
+                {
+                    var arr = new object[] { 'a', 'b', 'c', 'd', 'e' };
+                    Assert.AreEqual(new object[] { 'a' }, PickASetOfFirstElementsTask.TakeFirstElements(arr));
+                    Assert.AreEqual(new object[] { 'a', 'b' }, PickASetOfFirstElementsTask.TakeFirstElements(arr, 2));
+                }
+
+
                 [Test]
                 public void QuadrantsTest()
                 {

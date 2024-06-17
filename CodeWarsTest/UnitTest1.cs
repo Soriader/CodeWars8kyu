@@ -15,6 +15,15 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void AgeRangeCompatibilityEquationTest()
+                {
+                    Assert.AreEqual("15-20", AgeRangeCompatibilityEquationTask.DatingRange(17));
+                    Assert.AreEqual("27-66", AgeRangeCompatibilityEquationTask.DatingRange(40));
+                    Assert.AreEqual("14-16", AgeRangeCompatibilityEquationTask.DatingRange(15));
+                    Assert.AreEqual("24-56", AgeRangeCompatibilityEquationTask.DatingRange(35));
+                    Assert.AreEqual("9-11", AgeRangeCompatibilityEquationTask.DatingRange(10));
+                }
 
                 [Test]
                 public void PickASetOfFirstElementsTest()

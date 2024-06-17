@@ -16,6 +16,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void NBAFullTest()
+                {
+                    Assert.AreEqual(28.8, NBAFullTask.NbaExtrap(12, 20));
+                    Assert.AreEqual(48.0, NBAFullTask.NbaExtrap(10, 10));
+                    Assert.AreEqual(14.1, NBAFullTask.NbaExtrap(5, 17));
+                    Assert.AreEqual(0, NBAFullTask.NbaExtrap(0, 0));
+                    Assert.AreEqual(42.6, NBAFullTask.NbaExtrap(30.8, 34.7));
+                    Assert.AreEqual(32.5, NBAFullTask.NbaExtrap(22.9, 33.8));
+                }
+
+                [Test]
                 public void AgeRangeCompatibilityEquationTest()
                 {
                     Assert.AreEqual("15-20", AgeRangeCompatibilityEquationTask.DatingRange(17));

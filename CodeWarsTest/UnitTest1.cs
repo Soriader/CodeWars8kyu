@@ -16,6 +16,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void LocalizeTheBarycenterTest()
+                {
+                    Assert.AreEqual(new double[] { 8.6667, 6.6667 }, LocalizeTheBarycenterTask.BarTriang(
+                        new double[] { 4, 6 }, new double[] { 12, 4 }, new double[] { 10, 10 }));
+                    Assert.AreEqual(new double[] { 7.3333, 4.6667 }, LocalizeTheBarycenterTask.BarTriang(
+                                new double[] { 4, 2 }, new double[] { 12, 2 }, new double[] { 6, 10 }));
+                }
+
+                [Test]
                 public void RemoveDuplicatesTest()
                 {
                     Assert.AreEqual(new int[] { 1 }, RemoveDuplicatesTask.Distinct(new int[] { 1 }));

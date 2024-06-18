@@ -16,6 +16,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void RemoveDuplicatesTest()
+                {
+                    Assert.AreEqual(new int[] { 1 }, RemoveDuplicatesTask.Distinct(new int[] { 1 }));
+                    Assert.AreEqual(new int[] { 1, 2 }, RemoveDuplicatesTask.Distinct(new int[] { 1, 2 }));
+                    Assert.AreEqual(new int[] { 1, 2 }, RemoveDuplicatesTask.Distinct(new int[] { 1, 1, 2 }));
+                }
+
+                [Test]
                 public void NBAFullTest()
                 {
                     Assert.AreEqual(28.8, NBAFullTask.NbaExtrap(12, 20));

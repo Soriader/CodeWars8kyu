@@ -16,6 +16,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void PlayingWithCubesTest()
+                {
+                    PlayingWithCubesTask c = new PlayingWithCubesTask();
+                    Assert.AreEqual(0, c.GetSide(), "when not set before, Side should be 0");
+                    c.SetSide(5);
+                    Assert.AreEqual(5, c.GetSide(), "Should return 5");
+                }
+
+                [Test]
                 public static void LocalizeTheBarycenterTest()
                 {
                     Assert.AreEqual(new double[] { 8.6667, 6.6667 }, LocalizeTheBarycenterTask.BarTriang(

@@ -16,6 +16,14 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void EvilOrOdiousTest()
+                {
+                    Assert.AreEqual("It's Odious!", EvilOrOdiousTask.Evil(1));
+                    Assert.AreEqual("It's Odious!", EvilOrOdiousTask.Evil(2));
+                    Assert.AreEqual("It's Evil!", EvilOrOdiousTask.Evil(3));
+                }
+
+                [Test]
                 public static void PlayingWithCubesTest()
                 {
                     PlayingWithCubesTask c = new PlayingWithCubesTask();

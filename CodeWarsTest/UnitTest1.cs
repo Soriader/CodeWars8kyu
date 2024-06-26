@@ -16,6 +16,24 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FindTheSlopeTest()
+                {
+                    int[] test1 = { 19, 3, 20, 3 };
+                    int[] test2 = { 7, 2, 7, 4 };
+                    int[] test3 = { 10, 50, 30, 150 };
+                    int[] test4 = { 15, 45, 12, 60 };
+                    int[] test5 = { 10, 20, 20, 80 };
+                    int[] test6 = { -10, 6, -10, 3 };
+                    FindTheSlopeTask s = new FindTheSlopeTask();
+                    Assert.AreEqual("0", s.Slope(test1));
+                    Assert.AreEqual("undefined", s.Slope(test2));
+                    Assert.AreEqual("5", s.Slope(test3));
+                    Assert.AreEqual("-5", s.Slope(test4));
+                    Assert.AreEqual("6", s.Slope(test5));
+                    Assert.AreEqual("undefined", s.Slope(test6));
+                }
+
+                [Test]
                 public void SharkPontoonTest()
                 {
                     Assert.AreEqual("Alive!", SharkPontoonTask.Shark(29, 118, 1, 4, false));

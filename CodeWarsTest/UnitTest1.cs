@@ -16,6 +16,16 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void CascadingSubsetsTest()
+                {
+                    Assert.AreEqual(new[] { new[] { 3 }, new[] { 5 }, new[] { 8 }, new[] { 13 } }, CascadingSubsetsTask.EachCons(new int[] { 3, 5, 8, 13 }, 1));
+                    Assert.AreEqual(new[] { new[] { 3, 5, 8, 13 } }, CascadingSubsetsTask.EachCons(new int[] { 3, 5, 8, 13 }, 4));
+                    Assert.AreEqual(new[] { new[] { 3, 5, 8 }, new[] { 5, 8, 13 } }, CascadingSubsetsTask.EachCons(new int[] { 3, 5, 8, 13 }, 3));
+
+
+                }
+
+                [Test]
                 public void FindTheSlopeTest()
                 {
                     int[] test1 = { 19, 3, 20, 3 };

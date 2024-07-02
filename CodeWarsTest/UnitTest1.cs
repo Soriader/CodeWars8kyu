@@ -16,6 +16,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public static void GraderTest()
+                {
+                    Assert.AreEqual('C', GraderTask.Grader(0.7));
+                    Assert.AreEqual('A', GraderTask.Grader(0.9));
+                    Assert.AreEqual('D', GraderTask.Grader(0.6));
+                    Assert.AreEqual('F', GraderTask.Grader(0.2));
+                }
+
+                [Test]
                 public void ConvertToBinaryTest()
                 {
                     Assert.AreEqual(1, ConvertToBinaryTask.ToBinary(1));

@@ -16,6 +16,15 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void ConvertToBinaryTest()
+                {
+                    Assert.AreEqual(1, ConvertToBinaryTask.ToBinary(1));
+                    Assert.AreEqual(11, ConvertToBinaryTask.ToBinary(3));
+                    Assert.AreEqual(101, ConvertToBinaryTask.ToBinary(5));
+
+                }
+
+                [Test]
                 public void CascadingSubsetsTest()
                 {
                     Assert.AreEqual(new[] { new[] { 3 }, new[] { 5 }, new[] { 8 }, new[] { 13 } }, CascadingSubsetsTask.EachCons(new int[] { 3, 5, 8, 13 }, 1));

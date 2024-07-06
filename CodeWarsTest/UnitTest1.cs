@@ -16,6 +16,13 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void NameOnBillboardTest()
+                {
+                    Assert.AreEqual(600, NameOnBillboardTask.Billboard("Jeong-Ho Aristotelis"));
+                    Assert.AreEqual(40, NameOnBillboardTask.Billboard("CODEWARS", 5));
+                }
+
+                [Test]
                 public void FinishGuessTheNumberGameTest()
                 {
                     FinishGuessTheNumberGameTask guesser = new FinishGuessTheNumberGameTask(10, 2);

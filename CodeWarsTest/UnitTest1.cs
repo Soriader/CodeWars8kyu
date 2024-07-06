@@ -16,6 +16,17 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void FinishGuessTheNumberGameTest()
+                {
+                    FinishGuessTheNumberGameTask guesser = new FinishGuessTheNumberGameTask(10, 2);
+                    guesser.Guess(10);
+                    guesser.Guess(10);
+                    guesser.Guess(10);
+                    guesser.Guess(10);
+                    Assert.IsTrue(guesser.Guess(10));
+                }
+
+                [Test]
                 public static void GraderTest()
                 {
                     Assert.AreEqual('C', GraderTask.Grader(0.7));

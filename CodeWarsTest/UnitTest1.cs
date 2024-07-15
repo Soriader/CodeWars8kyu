@@ -16,6 +16,12 @@ namespace CodeWarsTest
             class Test
             {
                 [Test]
+                public void EnumerableMagicTest()
+                {
+                    Assert.AreEqual(true, EnumerableMagicTask.All(new int[] { 1, 2, 3, 4, 5 }, v => v < 9));
+                    Assert.AreEqual(false, EnumerableMagicTask.All(new int[] { 1, 2, 3, 4, 5 }, v => v > 9));
+                }
+                [Test]
                 public void test1()
                 {
                     ClassicHelloWorldTask.MainTask(new string[] { "Greetings from Javatlacati" });

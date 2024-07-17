@@ -1,6 +1,7 @@
 ﻿using CodeWars8kyu;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System;
+using System.Drawing;
 using System.Numerics;
 using System.Runtime.InteropServices.JavaScript;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -15,6 +16,19 @@ namespace CodeWarsTest
         {
             class Test
             {
+                [Test]
+                public void GeometryBasicsTest()
+                {
+                    DoTest(new Point(3, 3), new Point(3, 3), 0);
+                    DoTest(new Point(1, 6), new Point(4, 2), 5);
+
+                    void DoTest(Point a, Point b, double expected)
+                    {
+                        double actual = GeometryBasicsTask.DistanceBetweenPoints(a, b);
+                        Assert.AreEqual(expected, actual, 1e-6, "Incorrect answer for:\n  a=Point({0}, {1})\n  b=Point({2}, {3})\n", a.X, a.Y, b.X, b.Y);
+                    }
+                }
+
                 [Test]
                 public void EnumerableMagicTest()
                 {

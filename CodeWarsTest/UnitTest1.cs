@@ -16,7 +16,14 @@ namespace CodeWarsTest
         {
             class Test
             {
-                [Test]
+				[Test]
+				public static void OnlineRPGTest()
+				{
+					Assert.AreEqual(OnlineRPGTask.PlayerRankUp(64), false);
+					Assert.AreEqual(OnlineRPGTask.PlayerRankUp(101), "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.");
+				}
+
+				[Test]
                 public void SampleTest()
                 {
                     Assert.AreEqual("0,1,2,3,45\n10,11,12,13,14\n20,21,22,23,24\n30,31,32,33,34",

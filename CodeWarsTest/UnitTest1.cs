@@ -16,9 +16,17 @@ namespace CodeWarsTest
         {
             class Test
             {
+				[Test]
+				public static void FixedTest()
+				{
+					Assert.AreEqual(true, WilsonPrimesTask.AmIWilson(5));
+					Assert.AreEqual(false, WilsonPrimesTask.AmIWilson(9));
+					Assert.AreEqual(false, WilsonPrimesTask.AmIWilson(6));
+
+				}
 
 
-                [TestFixture]
+				[TestFixture]
                 public class DuckDuckGooseTests
                 {
                     [TestCase(1, "a")]

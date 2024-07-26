@@ -17,6 +17,13 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public void EnumerableMagicTrueTest()
+				{
+					Assert.AreEqual(true, EnumerableMagicTrueTask.Any(new int[] { 1, 2, 3, 4 }, v => v > 3));
+					Assert.AreEqual(false, EnumerableMagicTrueTask.Any(new int[] { 1, 2, 3, 4 }, v => v > 4));
+				}
+
+				[Test]
 				public static void FixedTest()
 				{
 					Assert.AreEqual(true, WilsonPrimesTask.AmIWilson(5));

@@ -17,6 +17,13 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public static void TestConstructor()
+				{
+					PlayingWithCubesTwoTask c = new PlayingWithCubesTwoTask(10);
+					Assert.AreEqual(10, c.GetSide(), "Should be 10");
+				}
+
+				[Test]
 				public void EnumerableMagicTrueTest()
 				{
 					Assert.AreEqual(true, EnumerableMagicTrueTask.Any(new int[] { 1, 2, 3, 4 }, v => v > 3));

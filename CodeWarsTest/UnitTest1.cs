@@ -17,6 +17,13 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public void AStrangeTripTest()
+				{
+					Assert.AreEqual(true, AStrangeTripTask.IsLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree Fiddy"));
+					Assert.AreEqual(true, AStrangeTripTask.IsLockNessMonster("I'm from Scottland. I moved here to be with my family sir. Please, $3.50 would go a long way to help me find them"));
+				}
+
+				[Test]
 				public static void TestConstructor()
 				{
 					PlayingWithCubesTwoTask c = new PlayingWithCubesTwoTask(10);

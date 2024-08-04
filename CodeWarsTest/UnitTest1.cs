@@ -17,6 +17,12 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public static void TakeAnArrowToTheKneeTest()
+				{
+					Assert.AreEqual("Test", TakeAnArrowToTheKneeTask.ArrowFunc(new int[] { 84, 101, 115, 116 }), "");
+				}
+
+				[Test]
 				public void AStrangeTripTest()
 				{
 					Assert.AreEqual(true, AStrangeTripTask.IsLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree Fiddy"));

@@ -17,6 +17,19 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public void GeometryBasicsCircleArea2DTest()
+				{
+
+				    double epsilon = 1e-6;
+
+					Assert.That(GeometryBasicsCircleAreaIn2DTask.CircleArea(new Circle(new PointOfCircle(10, 10), 30)), Is.EqualTo(2827.433388).Within(epsilon));
+					Assert.That(GeometryBasicsCircleAreaIn2DTask.CircleArea(new Circle(new PointOfCircle(25, -70), 30)), Is.EqualTo(2827.433388).Within(epsilon));
+					Assert.That(GeometryBasicsCircleAreaIn2DTask.CircleArea(new Circle(new PointOfCircle(-15, 5), 0)), Is.EqualTo(0).Within(epsilon));
+					Assert.That(GeometryBasicsCircleAreaIn2DTask.CircleArea(new Circle(new PointOfCircle(-15, 5), 12.5)), Is.EqualTo(490.873852).Within(epsilon));
+
+				}
+
+				[Test]
 				public static void TakeAnArrowToTheKneeTest()
 				{
 					Assert.AreEqual("Test", TakeAnArrowToTheKneeTask.ArrowFunc(new int[] { 84, 101, 115, 116 }), "");

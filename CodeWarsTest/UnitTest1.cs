@@ -17,6 +17,13 @@ namespace CodeWarsTest
             class Test
             {
 				[Test]
+				public void TrueForNoneMagicFourTest()
+				{
+					Assert.AreEqual(true, TrueForNoneMagicFourTask.None(new int[] { 1, 2, 3, 4, 5 }, v => v > 5));
+					Assert.AreEqual(false, TrueForNoneMagicFourTask.None(new int[] { 1, 2, 3, 4, 5 }, v => v > 4));
+				}
+
+				[Test]
 				public void AddNewItemTest()
 				{
 					List<int> listOfNumbers = new List<int>() { 1, 2, 2, 2, 4, 3, 4, 5, 6, 7 };
